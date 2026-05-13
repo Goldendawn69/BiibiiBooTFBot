@@ -59,12 +59,12 @@ This is the first safe step towards richer mental-change flavour, but it is not 
   When the transformation completes  
   Then the personal note is DM’d to me.
 
-- Given my DMs are closed and `/personalNote on`
+- Given my DMs are closed and Personal Transformation Notes are enabled
   When the bot tries to send a personal note  
   Then the public transformation still completes and the bot does not crash, the bot will give user seen only information that their personal transformation note couldn't be delivered.
 
 - Given I am not registered  
-  When I use `/personalnotes on`, `/personalnotes off`, or `/personalnotes status`  
+  When I use `/personaltransformationnotes on`, `/personaltransformationnotes off`, or `/personaltransformationnotes status`  
   Then the bot tells me to register first.
 
 - Given existing users do not have the new setting yet  
