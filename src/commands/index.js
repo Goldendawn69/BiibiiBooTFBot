@@ -5,6 +5,7 @@ const { handleResetForm } = require("./resetform");
 const { handleTransform } = require("./transform");
 const { handleRandomTransform } = require("./randomtransform");
 const { handleBBHelp } = require("./bbhelp");
+const { handleWhatAmI } = require("./whatami");
 
 const commandHandlers = {
   register: handleRegister,
@@ -14,6 +15,7 @@ const commandHandlers = {
   transform: handleTransform,
   randomtransform: handleRandomTransform,
   bbhelp: handleBBHelp,
+  whatami: handleWhatAmI,
 };
 
 module.exports = {

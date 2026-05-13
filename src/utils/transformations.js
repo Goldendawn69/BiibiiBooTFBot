@@ -27,7 +27,28 @@ function pickRandomItem(items) {
   return items[Math.floor(Math.random() * items.length)];
 }
 
+function findTransformationForUser(transformations, user) {
+  if (user.currentTransformationId) {
+    const transformationById = transformations.find(
+      (transformation) => transformation.id === user.currentTransformationId
+    );
+
+    if (transformationById) {
+      return transformationById;
+    }
+  }
+
+  if (user.currentForm) {
+    return transformations.find(
+      (transformation) => transformation.name === user.currentForm
+    );
+  }
+
+  return null;
+}
+
 module.exports = {
   loadTransformations,
   pickRandomItem,
+  findTransformationForUser,
 };

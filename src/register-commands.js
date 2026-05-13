@@ -33,6 +33,11 @@ const commands = [
     .toJSON(),
 
   new SlashCommandBuilder()
+    .setName("whatami")
+    .setDescription("Show your current transformation details.")
+    .toJSON(),
+
+  new SlashCommandBuilder()
     .setName("bbhelp")
     .setDescription("Show help for BiiBiiBoo TF Bot.")
     .toJSON(),

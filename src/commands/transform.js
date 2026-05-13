@@ -35,6 +35,7 @@ function applyRandomTransformation(users, userId, category) {
   const transformation = pickRandomItem(matchingTransformations);
 
   users[userId].currentForm = transformation.name;
+  users[userId].currentTransformationId = transformation.id;
   users[userId].lastTransformedAt = new Date().toISOString();
 
   return {

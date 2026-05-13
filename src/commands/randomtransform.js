@@ -35,6 +35,7 @@ async function handleRandomTransform(interaction) {
   const transformation = pickRandomItem(transformations);
 
   users[targetUserId].currentForm = transformation.name;
+  users[targetUserId].currentTransformationId = transformation.id;
   users[targetUserId].lastTransformedAt = new Date().toISOString();
 
   saveUsers(users);
