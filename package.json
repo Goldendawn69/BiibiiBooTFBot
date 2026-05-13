@@ -1,0 +1,26 @@
+{
+  "name": "biibiibootfbot",
+  "version": "1.0.0",
+  "description": "A small silly TF Gaming Bot for Discord channel",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "register": "node src/register-commands.js",
+    "validate-data": "node scripts/validate-data.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goldendawn69/biibiibooTFBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goldendawn69/biibiibooTFBot/issues"
+  },
+  "homepage": "https://github.com/Goldendawn69/biibiibooTFBot#readme",
+  "dependencies": {
+    "discord.js": "^14.26.4",
+    "dotenv": "^17.4.2"
+  }
+}

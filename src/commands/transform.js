@@ -1,0 +1,144 @@
+const { MessageFlags } = require("discord.js");
+const { loadUsers, saveUsers } = require("../utils/users");
+const {
+  loadTransformations,
+  pickRandomItem,
+} = require("../utils/transformations");
+const { buildTransformationEmbed } = require("../utils/embeds");
+
+function applyRandomTransformation(users, userId, category) {
+  const transformations = loadTransformations();
+
+  const matchingTransformations = category
+    ? transformations.filter((transformation) =>
+        Array.isArray(transformation.categories) &&
+        transformation.categories.includes(category)
+      )
+    : transformations;
+
+  console.log(
+    "Transform category:",
+    category || "none",
+    "| Matches:",
+    matchingTransformations.length
+  );
+
+  if (matchingTransformations.length === 0) {
+    return {
+      ok: false,
+      message: category
+        ? `There are no transformations loaded for category \`${category}\` yet.`
+        : "There are no transformations loaded yet.\nThe magic cupboard is sadly empty.",
+    };
+  }
+
+  const transformation = pickRandomItem(matchingTransformations);
+
+  users[userId].currentForm = transformation.name;
+  users[userId].lastTransformedAt = new Date().toISOString();
+
+  return {
+    ok: true,
+    transformation,
+  };
+}
+
+async function handleTransformMe(interaction) {
+  const users = loadUsers();
+  const userId = interaction.user.id;
+  const user = users[userId];
+
+  if (!user?.registered) {
+    await interaction.reply({
+      content:
+        "You are not registered yet. Use `/register` first if you want to join the silly transformation games.",
+      flags: MessageFlags.Ephemeral,
+    });
+    return;
+  }
+
+  const category = interaction.options.getString("category");
+
+  const result = applyRandomTransformation(users, userId, category);
+
+  if (!result.ok) {
+    await interaction.reply({
+      content: result.message,
+      flags: MessageFlags.Ephemeral,
+    });
+    return;
+  }
+
+  saveUsers(users);
+
+  const { embed, files } = buildTransformationEmbed(
+    result.transformation,
+    interaction.user.toString()
+  );
+
+  await interaction.reply({
+    embeds: [embed],
+    files,
+  });
+}
+
+async function handleTransformUser(interaction) {
+  const users = loadUsers();
+  const target = interaction.options.getUser("target");
+  const targetUser = users[target.id];
+
+  if (!targetUser?.registered) {
+    await interaction.reply({
+      content: `${target.toString()} has not opted into silly transformation games, so the magic politely fizzles out.`,
+      flags: MessageFlags.Ephemeral,
+    });
+    return;
+  }
+
+  const category = interaction.options.getString("category");
+
+  const result = applyRandomTransformation(users, target.id, category);
+
+  if (!result.ok) {
+    await interaction.reply({
+      content: result.message,
+      flags: MessageFlags.Ephemeral,
+    });
+    return;
+  }
+
+  saveUsers(users);
+
+  const { embed, files } = buildTransformationEmbed(
+    result.transformation,
+    target.toString()
+  );
+
+  await interaction.reply({
+    embeds: [embed],
+    files,
+  });
+}
+
+async function handleTransform(interaction) {
+  const subcommand = interaction.options.getSubcommand();
+
+  if (subcommand === "me") {
+    await handleTransformMe(interaction);
+    return;
+  }
+
+  if (subcommand === "user") {
+    await handleTransformUser(interaction);
+    return;
+  }
+
+  await interaction.reply({
+    content: "That transformation command is not recognised.",
+    flags: MessageFlags.Ephemeral,
+  });
+}
+
+module.exports = {
+  handleTransform,
+};

@@ -1,0 +1,7 @@
+.env
+node_modules/
+assets/.masters/
+data/users.json
+assets/transformations/*.psd
+assets/transformations/*.kra
+assets/transformations/*.clip
