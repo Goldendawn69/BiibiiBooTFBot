@@ -4,8 +4,8 @@ function hasTransformationNotes(transformation) {
   return (
     transformation.transformationNotes &&
     (
-      transformation.transformationNotes.formEffects ||
-      transformation.transformationNotes.innerEffects
+      transformation.transformationNotes.physicalEffects ||
+      transformation.transformationNotes.mentalEffects
     )
   );
 }
@@ -23,18 +23,18 @@ function buildTransformationNoteEmbed(transformation) {
     })
     .setTimestamp();
 
-  if (transformation.transformationNotes.formEffects) {
+  if (transformation.transformationNotes.physicalEffects) {
     embed.addFields({
-      name: "Form Effects",
-      value: transformation.transformationNotes.formEffects,
+      name: "Physical Effects",
+      value: transformation.transformationNotes.physicalEffects,
       inline: false,
     });
   }
 
-  if (transformation.transformationNotes.innerEffects) {
+  if (transformation.transformationNotes.mentalEffects) {
     embed.addFields({
-      name: "Inner Effects",
-      value: transformation.transformationNotes.innerEffects,
+      name: "Mental Effects",
+      value: transformation.transformationNotes.mentalEffects,
       inline: false,
     });
   }
