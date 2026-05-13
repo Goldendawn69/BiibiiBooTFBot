@@ -1,3 +1,31 @@
+const { EmbedBuilder } = require("discord.js");
+
+function buildTransformationNoteEmbed(transformation) {
+  return new EmbedBuilder()
+    .setTitle("✨ Private Transformation Note")
+    .addFields(
+      {
+        name: "Form",
+        value: transformation.name,
+        inline: true,
+      },
+      {
+        name: "Note",
+        value: "Form Effects",
+        inline: true,
+      },
+      {
+        name: "Details",
+        value: transformation.transformationNote,
+        inline: false,
+      }
+    )
+    .setFooter({
+      text: "BiiBiiBoo TF Bot",
+    })
+    .setTimestamp();
+}
+
 async function sendTransformationNote(discordUser, transformation) {
   if (!transformation.transformationNote) {
     return {
@@ -7,8 +35,10 @@ async function sendTransformationNote(discordUser, transformation) {
   }
 
   try {
+    const embed = buildTransformationNoteEmbed(transformation);
+
     await discordUser.send({
-      content: transformation.transformationNote,
+      embeds: [embed],
     });
 
     return {
