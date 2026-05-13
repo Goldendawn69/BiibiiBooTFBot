@@ -1,5 +1,9 @@
 const { MessageFlags } = require("discord.js");
-const { loadUsers, saveUsers } = require("../utils/users");
+const {
+  loadUsers,
+  pickUserMentalEffectsLevel,
+  saveUsers,
+} = require("../utils/users");
 const { sendTransformationNote } = require("../utils/transformationNotes");
 const {
   loadTransformations,
@@ -54,7 +58,11 @@ async function handleRandomTransform(interaction) {
   if (users[targetUserId].transformationNotesEnabled) {
     try {
       const targetUser = await interaction.client.users.fetch(targetUserId);
-      const noteResult = await sendTransformationNote(targetUser, transformation);
+      const noteResult = await sendTransformationNote(
+        targetUser,
+        transformation,
+        pickUserMentalEffectsLevel(users[targetUserId])
+      );
 
       if (noteResult.attempted && !noteResult.sent) {
         await interaction.followUp({

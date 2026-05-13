@@ -41,6 +41,11 @@ const commands = [
     .setName("bbhelp")
     .setDescription("Show help for BiiBiiBoo TF Bot.")
     .toJSON(),
+
+  new SlashCommandBuilder()
+    .setName("settings")
+    .setDescription("Open your BiiBiiBoo settings panel.")
+    .toJSON(),
   
   new SlashCommandBuilder()
     .setName("resetform")

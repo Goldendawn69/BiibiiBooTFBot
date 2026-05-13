@@ -28,6 +28,10 @@ const HELP_CONFIG = {
           name: "/resetform",
           description: "Clear your current form while staying registered.",
         },
+        {
+          name: "/settings",
+          description: "Open your private settings panel.",
+        },
       ],
     },
     {

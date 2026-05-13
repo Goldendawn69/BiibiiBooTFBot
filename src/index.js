@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const { Client, GatewayIntentBits, MessageFlags } = require("discord.js");
-const { commandHandlers } = require("./commands");
+const { commandHandlers, selectMenuHandlers } = require("./commands");
 const { shouldBlockInteraction } = require("./utils/interactionGuards");
 
 
@@ -14,6 +14,21 @@ client.once("clientReady", () => {
 });
 
 client.on("interactionCreate", async (interaction) => {
+  if (interaction.isStringSelectMenu()) {
+    const handler = selectMenuHandlers[interaction.customId];
+
+    if (!handler) {
+      await interaction.reply({
+        content: "That settings control is not recognised by this bot.",
+        flags: MessageFlags.Ephemeral,
+      });
+      return;
+    }
+
+    await handler(interaction);
+    return;
+  }
+
   if (!interaction.isChatInputCommand()) {
     return;
   }

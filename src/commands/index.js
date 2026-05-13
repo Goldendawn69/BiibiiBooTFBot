@@ -7,6 +7,12 @@ const { handleRandomTransform } = require("./randomtransform");
 const { handleBBHelp } = require("./bbhelp");
 const { handleWhatAmI } = require("./whatami");
 const { handleTransformationNotes } = require("./transformationnotes");
+const {
+  handleSettings,
+  handleSettingsSelectMenu,
+  SETTINGS_MENTAL_EFFECTS_MAX_CUSTOM_ID,
+  SETTINGS_MENTAL_EFFECTS_MIN_CUSTOM_ID,
+} = require("./settings");
 
 const commandHandlers = {
   register: handleRegister,
@@ -18,8 +24,15 @@ const commandHandlers = {
   bbhelp: handleBBHelp,
   whatami: handleWhatAmI,
   transformationnotes: handleTransformationNotes,
+  settings: handleSettings,
+};
+
+const selectMenuHandlers = {
+  [SETTINGS_MENTAL_EFFECTS_MAX_CUSTOM_ID]: handleSettingsSelectMenu,
+  [SETTINGS_MENTAL_EFFECTS_MIN_CUSTOM_ID]: handleSettingsSelectMenu,
 };
 
 module.exports = {
   commandHandlers,
+  selectMenuHandlers,
 };

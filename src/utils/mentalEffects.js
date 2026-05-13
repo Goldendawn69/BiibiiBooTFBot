@@ -19,6 +19,10 @@ function normalizeMentalEffectLevel(level) {
     : DEFAULT_MENTAL_EFFECT_LEVEL;
 }
 
+function getMentalEffectLevelIndex(level) {
+  return MENTAL_EFFECT_LEVELS.indexOf(normalizeMentalEffectLevel(level));
+}
+
 function getMentalEffectLevelLabel(level) {
   const normalizedLevel = normalizeMentalEffectLevel(level);
   const option = MENTAL_EFFECT_OPTIONS.find(
@@ -26,6 +30,38 @@ function getMentalEffectLevelLabel(level) {
   );
 
   return option ? option.label : normalizedLevel;
+}
+
+function normalizeMentalEffectRange(minLevel, maxLevel) {
+  const normalizedMinLevel = normalizeMentalEffectLevel(minLevel);
+  const normalizedMaxLevel = normalizeMentalEffectLevel(maxLevel);
+  const minIndex = getMentalEffectLevelIndex(normalizedMinLevel);
+  const maxIndex = getMentalEffectLevelIndex(normalizedMaxLevel);
+
+  if (minIndex <= maxIndex) {
+    return {
+      minLevel: normalizedMinLevel,
+      maxLevel: normalizedMaxLevel,
+    };
+  }
+
+  return {
+    minLevel: normalizedMaxLevel,
+    maxLevel: normalizedMinLevel,
+  };
+}
+
+function getMentalEffectLevelsInRange(minLevel, maxLevel) {
+  const normalizedRange = normalizeMentalEffectRange(minLevel, maxLevel);
+  const minIndex = getMentalEffectLevelIndex(normalizedRange.minLevel);
+  const maxIndex = getMentalEffectLevelIndex(normalizedRange.maxLevel);
+
+  return MENTAL_EFFECT_LEVELS.slice(minIndex, maxIndex + 1);
+}
+
+function pickRandomMentalEffectLevel(minLevel, maxLevel) {
+  const levels = getMentalEffectLevelsInRange(minLevel, maxLevel);
+  return levels[Math.floor(Math.random() * levels.length)];
 }
 
 function resolveMentalEffectText(
@@ -52,7 +88,11 @@ module.exports = {
   DEFAULT_MENTAL_EFFECT_LEVEL,
   MENTAL_EFFECT_CONTENT_LEVELS,
   MENTAL_EFFECT_LEVELS,
+  getMentalEffectLevelIndex,
   getMentalEffectLevelLabel,
+  getMentalEffectLevelsInRange,
+  normalizeMentalEffectRange,
   normalizeMentalEffectLevel,
+  pickRandomMentalEffectLevel,
   resolveMentalEffectText,
 };

@@ -1,5 +1,9 @@
 const { MessageFlags } = require("discord.js");
-const { loadUsers, saveUsers } = require("../utils/users");
+const {
+  loadUsers,
+  pickUserMentalEffectsLevel,
+  saveUsers,
+} = require("../utils/users");
 const {
   loadTransformations,
   pickRandomItem,
@@ -53,7 +57,11 @@ async function sendTransformationNoteIfEnabled(discordUser, userRecord, transfor
     };
   }
 
-  return sendTransformationNote(discordUser, transformation);
+  return sendTransformationNote(
+    discordUser,
+    transformation,
+    pickUserMentalEffectsLevel(userRecord)
+  );
 }
 
 async function handleTransformMe(interaction) {

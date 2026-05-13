@@ -1,5 +1,9 @@
 const { MessageFlags } = require("discord.js");
-const { loadUsers, saveUsers } = require("../utils/users");
+const {
+  getUserMentalEffectsRange,
+  loadUsers,
+  saveUsers,
+} = require("../utils/users");
 
 async function handleRegister(interaction) {
   const users = loadUsers();
@@ -13,11 +17,15 @@ async function handleRegister(interaction) {
     return;
   }
 
+  const defaultMentalEffectsRange = getUserMentalEffectsRange(null);
+
   users[userId] = {
     registered: true,
     currentForm: null,
     currentTransformationId: null,
     transformationNotesEnabled: false,
+    mentalEffectsMinLevel: defaultMentalEffectsRange.minLevel,
+    mentalEffectsMaxLevel: defaultMentalEffectsRange.maxLevel,
     registeredAt: new Date().toISOString(),
   };
 

@@ -183,10 +183,9 @@ keyed by transformation `id`, with the current default note in `normal`:
 }
 ```
 
-The bot currently sends the `normal` mental effect tier to every user with
-Transformation Notes enabled. Other tiers are content-ready for future character
-settings. Mental effect option labels, descriptions, and the no-mental-change
-message live in `src/config/settings.js`.
+When Transformation Notes are enabled, the bot rolls a mental effect tier within
+the user's selected Mental Effects range. Mental effect option labels,
+descriptions, and the no-mental-change message live in `src/config/settings.js`.
 
 If the details file is missing, empty, or contains an empty array, transformation
 commands will reply that no transformations are loaded.
