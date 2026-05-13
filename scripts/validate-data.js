@@ -20,6 +20,7 @@ const mentalEffectsFilePath = path.join(
   transformationsDirectoryPath,
   "mental-effects.json"
 );
+const mentalEffectTiers = ["mild", "normal", "strong", "full", "overwritten"];
 
 let hasError = false;
 
@@ -133,6 +134,14 @@ function validateMentalEffectsFile(effects, transformationIds) {
     if (!isPlainObject(mentalEffect)) {
       reportError(`${mentalEffectsFilePath} value for ${id} must be an object.`);
       continue;
+    }
+
+    for (const tier of mentalEffectTiers) {
+      if (!(tier in mentalEffect)) {
+        reportWarning(`${id} is missing ${tier} mental effects.`);
+      } else if (typeof mentalEffect[tier] !== "string") {
+        reportError(`${id} ${tier} mental effects must be a string.`);
+      }
     }
 
     if (

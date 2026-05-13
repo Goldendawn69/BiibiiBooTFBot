@@ -169,12 +169,16 @@ object keyed by transformation `id`:
 ```
 
 Private mental transformation notes live in `mental-effects.json` as an object
-keyed by transformation `id`, with the default note in `normal`:
+keyed by transformation `id`, with the current default note in `normal`:
 
 ```json
 {
   "clockwork_dragon": {
-    "normal": "The mental pull is light and playful."
+    "mild": "",
+    "normal": "The mental pull is light and playful.",
+    "strong": "",
+    "full": "",
+    "overwritten": ""
   }
 }
 ```
