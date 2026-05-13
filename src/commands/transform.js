@@ -5,6 +5,7 @@ const {
   pickRandomItem,
 } = require("../utils/transformations");
 const { buildTransformationEmbed } = require("../utils/embeds");
+const { sendTransformationNote } = require("../utils/transformationNotes");
 
 function applyRandomTransformation(users, userId, category) {
   const transformations = loadTransformations();
@@ -44,6 +45,17 @@ function applyRandomTransformation(users, userId, category) {
   };
 }
 
+async function sendTransformationNoteIfEnabled(discordUser, userRecord, transformation) {
+  if (!userRecord?.transformationNotesEnabled) {
+    return {
+      attempted: false,
+      sent: false,
+    };
+  }
+
+  return sendTransformationNote(discordUser, transformation);
+}
+
 async function handleTransformMe(interaction) {
   const users = loadUsers();
   const userId = interaction.user.id;
@@ -81,6 +93,21 @@ async function handleTransformMe(interaction) {
     embeds: [embed],
     files,
   });
+
+  const noteResult = await sendTransformationNoteIfEnabled(
+    interaction.user,
+    users[userId],
+    result.transformation
+  );
+
+  if (noteResult.attempted && !noteResult.sent) {
+    await interaction.followUp({
+      content:
+        "I tried to send your Transformation Note by DM, but your DMs appear to be closed.",
+      flags: MessageFlags.Ephemeral,
+    });
+  } 
+
 }
 
 async function handleTransformUser(interaction) {
@@ -119,6 +146,20 @@ async function handleTransformUser(interaction) {
     embeds: [embed],
     files,
   });
+
+  const noteResult = await sendTransformationNoteIfEnabled(
+    target,
+    users[target.id],
+    result.transformation
+  );
+
+  if (noteResult.attempted && !noteResult.sent) {
+    await interaction.followUp({
+      content: `I tried to send ${target.toString()} their Transformation Note by DM, but their DMs appear to be closed.`,
+      flags: MessageFlags.Ephemeral,
+    });
+  }
+  
 }
 
 async function handleTransform(interaction) {

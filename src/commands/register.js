@@ -16,6 +16,8 @@ async function handleRegister(interaction) {
   users[userId] = {
     registered: true,
     currentForm: null,
+    currentTransformationId: null,
+    transformationNotesEnabled: false,
     registeredAt: new Date().toISOString(),
   };
 

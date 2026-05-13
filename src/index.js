@@ -4,6 +4,7 @@ const { Client, GatewayIntentBits, MessageFlags } = require("discord.js");
 const { commandHandlers } = require("./commands");
 const { shouldBlockInteraction } = require("./utils/interactionGuards");
 
+
 const client = new Client({
   intents: [GatewayIntentBits.Guilds],
 });

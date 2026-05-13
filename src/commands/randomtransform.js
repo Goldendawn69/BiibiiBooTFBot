@@ -1,5 +1,6 @@
 const { MessageFlags } = require("discord.js");
 const { loadUsers, saveUsers } = require("../utils/users");
+const { sendTransformationNote } = require("../utils/transformationNotes");
 const {
   loadTransformations,
   pickRandomItem,
@@ -49,6 +50,23 @@ async function handleRandomTransform(interaction) {
     embeds: [embed],
     files,
   });
+
+  if (users[targetUserId].transformationNotesEnabled) {
+    try {
+      const targetUser = await interaction.client.users.fetch(targetUserId);
+      const noteResult = await sendTransformationNote(targetUser, transformation);
+
+      if (noteResult.attempted && !noteResult.sent) {
+        await interaction.followUp({
+          content: `I tried to send <@${targetUserId}> their Transformation Note by DM, but their DMs appear to be closed.`,
+          flags: MessageFlags.Ephemeral,
+        });
+      }
+    } catch (error) {
+      console.warn("Could not fetch user for transformation note:", error);
+    }
+  }
+
 }
 
 module.exports = {

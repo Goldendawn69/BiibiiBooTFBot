@@ -6,6 +6,7 @@ const { handleTransform } = require("./transform");
 const { handleRandomTransform } = require("./randomtransform");
 const { handleBBHelp } = require("./bbhelp");
 const { handleWhatAmI } = require("./whatami");
+const { handleTransformationNotes } = require("./transformationnotes");
 
 const commandHandlers = {
   register: handleRegister,
@@ -16,6 +17,7 @@ const commandHandlers = {
   randomtransform: handleRandomTransform,
   bbhelp: handleBBHelp,
   whatami: handleWhatAmI,
+  transformationnotes: handleTransformationNotes,
 };
 
 module.exports = {

@@ -53,6 +53,26 @@ const commands = [
     .toJSON(),
 
   new SlashCommandBuilder()
+    .setName("transformationnotes")
+    .setDescription("Manage private DM notes for transformation roleplay.")
+    .addSubcommand((subcommand) =>
+      subcommand
+        .setName("on")
+        .setDescription("Enable private transformation notes by DM.")
+    )
+    .addSubcommand((subcommand) =>
+      subcommand
+        .setName("off")
+        .setDescription("Disable private transformation notes.")
+    )
+    .addSubcommand((subcommand) =>
+      subcommand
+        .setName("status")
+        .setDescription("Check whether transformation notes are enabled.")
+    )
+    .toJSON(),
+
+  new SlashCommandBuilder()
     .setName("transform")
     .setDescription("Trigger a silly transformation.")
     .addSubcommand((subcommand) =>
