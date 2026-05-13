@@ -1,5 +1,8 @@
 const fs = require("fs");
 const path = require("path");
+const {
+  MENTAL_EFFECT_CONTENT_LEVELS,
+} = require("../src/utils/mentalEffects");
 
 const transformationsDirectoryPath = path.join(
   __dirname,
@@ -20,8 +23,6 @@ const mentalEffectsFilePath = path.join(
   transformationsDirectoryPath,
   "mental-effects.json"
 );
-const mentalEffectTiers = ["mild", "normal", "strong", "full", "overwritten"];
-
 let hasError = false;
 
 function reportError(message) {
@@ -136,11 +137,13 @@ function validateMentalEffectsFile(effects, transformationIds) {
       continue;
     }
 
-    for (const tier of mentalEffectTiers) {
+    for (const tier of MENTAL_EFFECT_CONTENT_LEVELS) {
       if (!(tier in mentalEffect)) {
         reportWarning(`${id} is missing ${tier} mental effects.`);
       } else if (typeof mentalEffect[tier] !== "string") {
         reportError(`${id} ${tier} mental effects must be a string.`);
+      } else if (tier !== "normal" && !mentalEffect[tier].trim()) {
+        reportWarning(`${id} has blank ${tier} mental effects.`);
       }
     }
 

@@ -1,21 +1,39 @@
 const { EmbedBuilder } = require("discord.js");
+const {
+  DEFAULT_MENTAL_EFFECT_LEVEL,
+  getMentalEffectLevelLabel,
+  resolveMentalEffectText,
+} = require("./mentalEffects");
 
-function hasTransformationNotes(transformation) {
+function hasTransformationNotes(
+  transformation,
+  mentalEffectLevel = DEFAULT_MENTAL_EFFECT_LEVEL
+) {
   const notes = transformation.transformationNotes;
-  const mentalEffects = notes?.mentalEffects;
+  const mentalEffectText = resolveMentalEffectText(
+    transformation,
+    mentalEffectLevel
+  );
 
   return Boolean(
     notes &&
       (
         notes.physicalEffects ||
-        mentalEffects?.normal
+        mentalEffectText
       )
   );
 }
 
-function buildTransformationNoteEmbed(transformation) {
+function buildTransformationNoteEmbed(
+  transformation,
+  mentalEffectLevel = DEFAULT_MENTAL_EFFECT_LEVEL
+) {
   const notes = transformation.transformationNotes;
-  const mentalEffects = notes?.mentalEffects;
+  const mentalEffectText = resolveMentalEffectText(
+    transformation,
+    mentalEffectLevel
+  );
+  const mentalEffectLevelLabel = getMentalEffectLevelLabel(mentalEffectLevel);
 
   const embed = new EmbedBuilder()
     .setTitle("✨ Private Transformation Note")
@@ -37,10 +55,10 @@ function buildTransformationNoteEmbed(transformation) {
     });
   }
 
-  if (mentalEffects?.normal) {
+  if (mentalEffectText) {
     embed.addFields({
-      name: "Mental Effects",
-      value: mentalEffects.normal,
+      name: `Mental Effects (${mentalEffectLevelLabel})`,
+      value: mentalEffectText,
       inline: false,
     });
   }
@@ -48,8 +66,12 @@ function buildTransformationNoteEmbed(transformation) {
   return embed;
 }
 
-async function sendTransformationNote(discordUser, transformation) {
-  if (!hasTransformationNotes(transformation)) {
+async function sendTransformationNote(
+  discordUser,
+  transformation,
+  mentalEffectLevel = DEFAULT_MENTAL_EFFECT_LEVEL
+) {
+  if (!hasTransformationNotes(transformation, mentalEffectLevel)) {
     return {
       attempted: false,
       sent: false,
@@ -57,7 +79,10 @@ async function sendTransformationNote(discordUser, transformation) {
   }
 
   try {
-    const embed = buildTransformationNoteEmbed(transformation);
+    const embed = buildTransformationNoteEmbed(
+      transformation,
+      mentalEffectLevel
+    );
 
     await discordUser.send({
       embeds: [embed],
@@ -78,5 +103,6 @@ async function sendTransformationNote(discordUser, transformation) {
 }
 
 module.exports = {
+  buildTransformationNoteEmbed,
   sendTransformationNote,
 };
