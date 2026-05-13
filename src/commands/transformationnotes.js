@@ -21,9 +21,9 @@ async function handleTransformationNotes(interaction) {
     return;
   }
 
-  const subcommand = interaction.options.getSubcommand();
+  const action = interaction.options.getString("action");
 
-  if (subcommand === "on") {
+  if (action === "on") {
     user.transformationNotesEnabled = true;
     saveUsers(users);
 
@@ -35,7 +35,7 @@ async function handleTransformationNotes(interaction) {
     return;
   }
 
-  if (subcommand === "off") {
+  if (action === "off") {
     user.transformationNotesEnabled = false;
     saveUsers(users);
 
@@ -47,7 +47,7 @@ async function handleTransformationNotes(interaction) {
     return;
   }
 
-  if (subcommand === "status") {
+  if (action === "status") {
     await interaction.reply({
       content: getStatusText(user),
       flags: MessageFlags.Ephemeral,

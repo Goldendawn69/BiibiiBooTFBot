@@ -55,20 +55,16 @@ const commands = [
   new SlashCommandBuilder()
     .setName("transformationnotes")
     .setDescription("Manage private DM notes for transformation roleplay.")
-    .addSubcommand((subcommand) =>
-      subcommand
-        .setName("on")
-        .setDescription("Enable private transformation notes by DM.")
-    )
-    .addSubcommand((subcommand) =>
-      subcommand
-        .setName("off")
-        .setDescription("Disable private transformation notes.")
-    )
-    .addSubcommand((subcommand) =>
-      subcommand
-        .setName("status")
-        .setDescription("Check whether transformation notes are enabled.")
+    .addStringOption((option) =>
+      option
+        .setName("action")
+        .setDescription("Choose what to do with Transformation Notes.")
+        .setRequired(true)
+        .addChoices(
+          { name: "On", value: "on" },
+          { name: "Off", value: "off" },
+          { name: "Status", value: "status" }
+        )
     )
     .toJSON(),
 
