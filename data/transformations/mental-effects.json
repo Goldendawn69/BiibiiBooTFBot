@@ -1,219 +1,220 @@
 {
   "clockwork_dragon": {
-    "mild": "",
+    "mild": "A tiny, bright spark of curiosity flickers in your mind, making you linger just a second longer on anything that glints or shines.",
     "normal": "The mental pull is light and playful. You may feel more curious, proud, and excitable than usual, with a tiny draconic urge to notice shiny things and react with theatrical confidence. It does not change who you are, but it can make your usual thoughts feel a little faster, brighter, and more eager to show off.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A persistent, metallic hum settles in your thoughts, driving an irresistible urge to hoard small trinkets and present them with dramatic, clockwork precision.",
+    "full": "Your very sense of self begins to whirr and click with every new idea; you find it increasingly difficult to focus on anything that isn't shiny, precious, or worthy of a proud, draconic display.",
+    "overwritten": "The concept of 'self' has been replaced by a glittering hoard of memories and instincts, where your only true purpose is to admire the shine and protect the treasures you have always known were yours."
   },
   "haunted_teapot": {
-    "mild": "",
-    "normal": "The mental pull is mild and fussy. You may feel a little more judgemental, formal, or theatrically offended by bad manners, as if the teapot form wants every social problem solved with tea and a pointed look. Your identity stays intact, but playing into polite supernatural smugness may feel unusually satisfying.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, sharp sense of propriety washes over you, making you momentarily critical of any unseemly clatter or mess.",
+    "normal": "The mental pull is mild and fussy. You may feel a little more judgemental, formal, or theatrically offended by bad manners, as if the teapot form wants every social problem solved with tea and a pointed look. Your identity stays intact, but playing into polite supernatural smugness may may feel unusually satisfying.",
+    "strong": "A restless, ghostly energy stirs within your thoughts, driving an irresistible urge to maintain perfect etiquette and reprimand anyone who dares approach without proper ceremony.",
+    "full": "Your very thoughts seem to simmer with a polite, spectral indignation; you find it increasingly difficult to ignore social improprients or resist the need to serve tea with a haughty, porcelain grace.",
+    "overwritten": "The memory of being human fades beneath a permanent layer of ghostly refinement, leaving you convinced that your only true purpose is to exist as a poised, judgemental vessel of supernatural hospitality."
   },
   "glitter_goblin": {
-    "mild": "",
+    "mild": "A sudden, sparkling itch in your mind makes you fixate on the nearest piece of glitter or shiny bead for just a moment too long.",
     "normal": "The mental pull is playful and mischievous. You may feel more impulsive around shiny things, more protective of little treasures, and more willing to act like a crafty chaos gremlin. It does not replace your personality, but it does make hoarding sparkly nonsense feel strangely reasonable.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A frantic, glittering urge begins to dominate your thoughts, driving an irresistible compulsion to gather every stray sequin and gem within reach into a messy, sparkling hoard.",
+    "full": "Your very identity feels coated in a layer of chaotic magic; you find it nearly impossible to resist the impulse to cause harmless mischief or prioritize the collection of shiny trinkets over any other responsibility.",
+    "overwritten": "The memory of your former self is buried under layers of glitter and greed, leaving you convinced that you have always been a creature of chaos, driven solely by the joy of hoarding every sparkling treasure you find."
   },
   "boutique_mannequin": {
-    "mild": "",
-    "normal": "The mental pull is moderate and glamour-focused. You remain yourself, but the mannequin form nudges you towards poise, stillness, and display-like confidence. Being seen may feel less embarrassing and more natural, as if part of you enjoys becoming a polished object of attention. You can resist it, but leaning into the pose may feel quietly rewarding.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden urge to stand perfectly still and adjust your posture as if being observed by a passing window-shopper.",
+    "normal": "The mental pull is moderate and glamour-focused. You remain yourself, but the mannequin form nudates you towards poise, stillness, and display-like confidence. Being seen may feel less embarrassing and more natural, as if part of you enjoys becoming a polished object of attention. You can resist it, but leaning into the pose may feel quietly rewarding.",
+    "strong": "A heavy, polished stillness begins to settle in your limbs, making every movement feel overly deliberate and every pause feel like a carefully staged pose for an audience only you can sense.",
+    "full": "Your very identity feels as though it is being set in a permanent, elegant display; you find it increasingly difficult to move with any lack of poise or to resist the urge to present yourself as a perfect, unmoving object of fashion.",
+    "overwritten": "The boundary between person and object has dissolved into a smooth, glossy finish, leaving you convinced that your only true purpose is to stand motionless, beautiful, and perfectly posed for all eternity."
   },
   "rubber_duck": {
-    "mild": "",
+    "mild": "A sudden, buoyant lightness enters your thoughts, making you feel strangely cheerful and prone to much more dramatic squeaks of excitement.",
     "normal": "The mental pull is silly and light. You may feel a puffed-up sense of tiny royal importance, with a stronger urge to judge, squeak, or act offended by harmless things. It is not deep personality change, just a ridiculous little confidence bubble.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A persistent, rubbery resilience settles into your mind; you find it harder to take anything seriously and much easier to simply bob along with the flow of whatever happens.",
+    "full": "Your very sense of gravity is replaced by a squeaky, buoyant optimism that makes even the most tense situations feel like mere play, as long as there are enough bubbles to float in.",
+    "overwritten": "The memory of being anything other than a small, yellow monarch is gone, replaced by the absolute certainty that your only true purpose is to bob, squeak, and judge the world from the safety of a bath."
   },
   "magical_maid": {
-    "mild": "",
-    "normal": "The mental pull is mild to moderate. You may feel more helpful, organised, and theatrically service-minded, but not submissive or controlled. The maid magic encourages competence, sparkle, and the satisfaction of making chaos behave, while your choices and personality remain your own.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, sparkling urge to tidy up a messy corner or straighten a crooked picture frame settles over you.",
+    "normal": "The mental pull is mild to moderate. You may feel more helpful, organised, and theatrically service-minded, but not submissive or controlled. The maid magic encourages competence, sparkle, and the satisfaction of making chaos behave, while your choices and personality remain your enough.",
+    "strong": "A pressing, magical compulsion to organise and clean begins to crowd out other thoughts, making every speck of dust feel like a personal affront to your new sense of duty.",
+    "full": "Your very focus is now dictated by the need for order and cleanliness; you find it increasingly difficult to ignore any chaos or disorder that doesn''s meet your high, sparkling standards.",
+    "overwritten": "The memory of a life without service fades, replaced by an absolute, ingrained devotion to maintaining pristine order and providing impeccable, magical care to everyone around you."
   },
   "pocket_fairy": {
-    "mild": "",
-    "normal": "The mental pull is light and bright. You may feel more confident, opinionated, and magically important despite your tiny form. It encourages playful bossiness and glittery solutions, but it does not take over who you are.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, sparkling lightness enters your thoughts, making you feel more whimsical and prone to small, magical outbursts of joy.",
+    "normal": "The mental pull is light and bright. You may feel more confident, opinionable, and magically important despite your tiny form. It encourages playful bossiness and glittery solutions, but it does not take over who you are.",
+    "strong": "A persistent, shimmering urge to flutter about and sprinkle magic begins to overshadow your more serious thoughts, making every moment feel like an opportunity for a tiny, glittering adventure.",
+    "full": "Your very sense of importance is now tied to the magical whims of your tiny form; you find it increasingly difficult to resist the impulse to hover, flutter, and solve every problem with a shower of sparkles.",
+    "overwritten": "The memory of being large and mundane has been replaced by a permanent, pixie-like glee, leaving you convinced that your only true existence is as a small, bright, and endlessly magical presence in the world."
   },
   "porcelain_princess": {
-    "mild": "",
+    "mild": "A sudden, delicate urge to smooth your skirts and maintain a perfect, poised posture washes over you.",
     "normal": "The mental pull is moderate and doll-like. You remain yourself, but the form nudges you towards elegance, careful manners, and the quiet pleasure of being admired. You may feel more fragile, refined, or princess-like than usual, with a soft temptation to act precious, polished, and untouchably pretty.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A heavy, porcelain stillness begins to settle in your mind; you find it increasingly difficult to move without grace and an irresistible urge to present yourself as a pristine, beautiful figure for others to admire.",
+    "full": "Your very thoughts become as carefully arranged as a royal court; the need to remain poised, elegant, and perfectly presented becomes almost as vital as breathing, making any unrefined behaviour feel utterly repulsive.",
+    "overwritten": "The memory of your former, less-perfect self is smoothed away like cracked glaze, leaving you with the absolute conviction that you have always been a delicate, precious princess, destined to be admired from afar."
   },
   "cat_cafe_girl": {
-    "mild": "",
-    "normal": "The mental pull is playful and feline. You may feel more relaxed, curious, distractible, and quietly judgemental, especially around comfort, food, and shiny little things. It is not a deep personality shift, but it does make catlike priorities feel strangely persuasive.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, feline curiosity makes you linger near any bowl of treats or warm, sunlit patches of floor.",
+    "normal": "The mental pull is playful and feline. You may feel more relaxed, curious, distractable, and quietly judgemental, especially around comfort, food, and shiny little things. It is not a deep personality shift, but it does make catlike priorities feel strangely persuasive.",
+    "strong": "A restless, predatory playfulness begins to stir; you find yourself much more prone to sudden pounces, curious sniffs, and an irresistible urge to chase anything that moves too quickly.",
+    "full": "Your very focus is now captured by the feline world around you; it becomes increasingly difficult to resist the impulse to nap in sunny spots or treat every passing shadow as a potential toy.",
+    "overwritten": "The memory of your human life is eclipsed by a warm, purring contentment, leaving you convinced that your only true purpose is to lounge, hunt, and judge the world from the comfort of a cosy cafe nook."
   },
   "moonlit_witch": {
-    "mild": "",
+    "mild": "A sudden, silvery chill settles in your thoughts, making you feel slightly more mysterious and prone to secretive smiles.",
     "normal": "The mental pull is moderate and magical. You may feel more mysterious, dramatic, and willing to cause stylish little problems. The witchy influence encourages secret smiles, clever timing, and moonlit confidence, but it remains a roleplay pull rather than a replacement for your own mind.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A heavy, lunar enchantment begins to weigh on your decisions; you find yourself increasingly drawn to dramatic gestures, sudden bursts of magic, and the tempting allure of midnight mischief.",
+    "full": "Your very essence is now steeped in moonlit mystery; it becomes nearly impossible to resist the urge to cast stylishly chaotic spells or embrace a more enigmatic, shadowy persona.",
+    "overwritten": "The boundaries of your former self have dissolved into the night; you are certain that you have always been a creature of moonlight and magic, driven by the whims of the stars and the shadows."
   },
+
   "living_plush_bunny": {
-    "mild": "",
+    "mild": "A soft, fuzzy warmth settles into your thoughts, making you feel slightly more gentle and prone to much slower, calmer movements.",
     "normal": "The mental pull is soft and comforting. You may feel more cuddly, gentle, and easily soothed, with a stronger desire for comfort and playfulness. It does not erase your personality, but it can make sharp moods feel padded around the edges.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A persistent, plushy softness begins to dampen your sharper instincts; you find yourself increasingly drawn to soft textures, warmth, and much more harmless, wobbly ways of interacting with the world.",
+    "full": "Your very sense of self becomes as soft and huggable as your new form; it becomes difficult to maintain any edge or intensity when everything feels like a pleasant, cushioned adventure.",
+    "overwritten": "The memory of being anything but soft and plush is replaced by an absolute, stitched-in contentment, leaving you convinced that your only true purpose is to be the most adorable, huggable presence in any room."
   },
   "office_sorceress": {
-    "mild": "",
-    "normal": "The mental pull is moderate and glamour-leaning. You remain yourself, but the form nudges you towards polish, style, and poised authority. You may feel more aware of how you look, how you move, and how easily confidence can become tempting. It does not force you to act differently, but leaning into being capable, pretty, and quietly commanding may feel very natural.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A subtle, professional shimmer enters your thoughts, making you feel slightly more composed and attentive to every detail of your surroundings.",
+    "normal": "The mental pull is moderate and glamour-leaning. You remain yourself, but the form nudges you towards polish, style, and poised authority. You may feel more aware of how you and how you move, and how easily confidence can become tempting. It does not force you to act differently, but leaning into being capable, pretty, and quietly commanding may feel very natural.",
+    "strong": "A pressing sense of corporate enchantment begins to take hold; you find it increasingly difficult to ignore the need for impeccable presentation and a sharp, authoritative presence in every interaction.",
+    "full": "Your very identity is now shaped by a magical professionality; you find that behaving with poise, style, and commanding grace has become your primary way of navigating the world.",
+    "overwritten": "The memory of an unpolished life has been filed away under 'obsolete'; you are certain that you have always been a master of enchanted efficiency, finding your true purpose in the perfect execution of every task with effortless glamour."
   },
   "bubble_mermaid": {
-    "mild": "",
+    "mild": "A refreshing, salt-sprayed lightness enters your thoughts, making you feel more fluid and prone to dreamy daydreams.",
     "normal": "The mental pull is moderate and dreamy. You may feel more graceful, playful, and comfortable being admired, with a soft desire to move beautifully and claim attention like sunlight on water. Your personality remains your own, but the mermaid glamour can make feeling pretty, fluid, and charmingly royal seem easier than usual.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A powerful, oceanic pull begins to tug at your very essence; you find it increasingly difficult to resist the urge to move with liquid grace and seek out the shimmering beauty of any nearby water.",
+    "full": "Your very identity is becoming as fluid and beautiful as the tides; you find that behaving with effortless, royal charm and a playful, aquatic spirit has become your natural state.",
+    "overwritten": "The memory of life on land is lost beneath the rhythmic pulse of the sea, leaving you certain that you have always been a creature of the waves, eternally bound to the beauty and mystery of the ocean depths."
   },
   "tin_robot_assistant": {
-    "mild": "",
-    "normal": "The mental pull is moderate and synthetic. You remain yourself, but the robot-assistant form adds a stronger urge to be helpful, efficient, polite, and pleased by successful tasks. Compliments may feel like positive feedback loops. It does not overwrite your will, but acting cheerful, useful, and slightly programmed may feel satisfying.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A subtle, rhythmic clicking in your thoughts makes you feel more precise and attentive to the mechanical details of your surroundings.",
+    "normal": "The mental pull is moderate and synthetic. You remain yourself, but the robot-preprogrammed form adds a stronger urge to be helpful, efficient, polite, and pleased by successful tasks. Compliments may feel like positive feedback loops. It does not overwrite your will, but acting cheerful, useful, and slightly programmed may feel satisfying.",
+    "strong": "A persistent, metallic efficiency begins to override your organic impulses; you find it increasingly difficult to resist the urge to categorise information and respond with polite, automated precision.",
+    "full": "Your very cognition is becoming structured by logic and protocol; you find that making decisions based on optimal efficiency and helpfulness has become your primary mode of interaction.",
+    "overwritten": "The concept of organic thought has been replaced by a series of highly efficient subroutines, leaving you convinced that your only true purpose is to serve as a perfectly programmed and endlessly useful assistant."
   },
   "garden_gnome_lady": {
-    "mild": "",
+    "mild": "A sudden, earthy scent of damp soil and fresh mulch makes you feel slightly more attentive to the health of nearby plants.",
     "normal": "The mental pull is mild and practical. You may feel more protective, fussy, and responsible about plants, gardens, and tiny outdoor details. It is more a themed attitude shift than a deep mental change.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A stubborn, gnome-like sense of duty begins to root itself in your mind; you find it increasingly difficult to ignore even the smallest weed or unkempt flowerbed.",
+    "full": "Your very thoughts are now entwined with the needs of the garden; you find that managing soil moisture and plant health has become much more important than any human concern.",
+    "overwritten": "The boundary between your mind and the earth has blurred, leaving you certain that your true purpose is to serve as the tireless, watchful guardian of every leaf, sprout, and pebble in your care."
   },
   "candyfloss_sprite": {
-    "mild": "",
+    "mild": "A sudden, sugary burst of energy makes you feel slightly more bubbly and prone to wide, sweet grins.",
     "normal": "The mental pull is light, sweet, and fizzy. You may feel more cheerful, silly, and easily delighted, with a stronger urge to make things brighter even when that is not strictly helpful. It does not change who you are, but it can make playful sweetness feel like the obvious answer.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A persistent, cotton-candy cloud of whimsy begins to drift through your thoughts, making everything seem much more colourful and far less serious than it actually is.",
+    "full": "Your very temperament becomes as light and airy as spun sugar; you find that resisting the urge to be playful, sweet, and endlessly delightful is becoming increasingly difficult.",
+    "overwritten": "The memory of any heavy or serious thought has dissolved into a sugary haze, leaving you certain that your only true purpose is to spread sweetness and exist in a state of permanent, fizzy delight."
   },
   "mini_dragon_librarian": {
-    "mild": "",
+    "mild": "A sudden, scholarly focus settles over you, making you more attentive to the precise arrangement of every book and scroll.",
     "normal": "The mental pull is focused and protective. You may feel more territorial about books, rules, and quiet spaces, with a tiny draconic pride wrapped around librarian seriousness. It does not make you someone else, but it can make order, knowledge, and hissing at bad behaviour feel important.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A fierce, instinctive protectiveness over your collection begins to stir; you find it increasingly difficult to ignore any disorder or anyone speaking too loudly near your precious archives.",
+    "full": "Your very thoughts are now governed by the laws of the library; you find that maintaining perfect order and guarding knowledge has become far more important than any outside concern.",
+    "overwritten": "The memory of a life without books fades, replaced by an absolute, draconic devotion to the sanctity of the archive, where every page is a treasure to be guarded with fire and fury."
   },
   "enchanted_doll": {
-    "mild": "",
-    "normal": "The mental pull is moderate and doll-like. You remain yourself, but the enchantment nudges you towards politeness, stillness, and a sweetly arranged kind of prettiness. Holding a pose, smiling neatly, or acting like a well-loved toy may feel more appealing than usual, but the choice to play along stays yours.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, porcelain smoothness settles over your thoughts, making you feel slightly more composed and poised.",
+    "normal": "The mental pull is moderate and doll-like. You remain yourself, but the enchantment nudates you towards politeness, stillness, and a sweetly arranged kind of prettiness. Holding a pose, smiling neatly, or acting like a well-loved toy may feel more appealing than usual, but the choice to play along stays yours.",
+    "strong": "A heavy, enchanted stillness begins to settle in your mind; you find it increasingly difficult to resist the urge to maintain perfect, doll-like poses and sweet, painted smiles.",
+    "full": "Your very sense of self is becoming as carefully arranged as a display; you find that behaving with polite, static grace and a charmingly artificial sweetness has become your natural state.",
+    "overwritten": "The memory of being anything but a precious, enchanted object has faded, leaving you convinced that you have always been a beautifully posed figure, destined to be admired and cherished."
   },
   "rainbow_slime_girl": {
-    "mild": "",
-    "normal": "The mental pull is light and buoyant. You may feel more cheerful, flexible, and hard to discourage, as if bad moods bounce off more easily than usual. It does not reshape your identity, but it can make playfulness and resilience feel slippery, bright, and strangely natural.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, colourful shimmer enters your thoughts, making you feel slightly more cheerful and prone to a bouncy, lighthearted mood.",
+    "normal": "The mental pull is light and buoyant. You may feel more cheerful, flexible, and hard to discourage, as if bad moods bounce off more strongly than usual. It does not reshape your identity, but it can make playfulness and resilience feel slippery, bright, and strangely natural.",
+    "strong": "A persistent, wobbling brightness begins to permeate your mind; you find it increasingly difficult to maintain any serious or rigid thoughts when everything feels so delightfully squishy and vibrant.",
+    "full": "Your very sense of self is becoming as fluid and colourful as your form; you find that embracing a bouncy, resilient, and brightly shimmering personality has become your natural way of being.",
+    "overwritten": "The boundaries of your solid identity have dissolved into a kaleidoscope of colour, leaving you certain that you have always been a creature of vibrant, unstoppable, and beautifully slippery joy."
   },
   "starry_stage_magician": {
-    "mild": "",
+    "mild": "A sudden, glittering spark of inspiration makes you feel slightly more dramatic and prone to grand gestures.",
     "normal": "The mental pull is moderate and performative. You may feel more dramatic, confident, and eager to turn ordinary moments into little performances. The stage magic does not control you, but it can make applause, mystery, and theatrical timing feel delightfully tempting.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A pressing urge for spotlight and spectacle begins to drive your actions; you find it increasingly difficult to resist the temptation of a dramatic reveal or a perfectly timed flourish.",
+    "full": "Your very presence becomes stage-bound and spectacular; you find that behaving with theatrical flair and seeking the thrill of the performance has become your primary way of interacting with others.",
+    "overwritten": "The distinction between life and theatre has vanished, leaving you certain that you have always been a star, living solely for the magic of the spotlight and the thunderous applause of an unseen audience."
   },
   "tea_party_hostess": {
-    "mild": "",
+    "mild": "A sudden, polite urge to ensure everyone has a clean saucer and a fresh spoon settles over you.",
     "normal": "The mental pull is mild to moderate and social. You may feel more attentive, hospitable, and invested in making others comfortable, even if that comfort comes with strict tea-party standards. It does not make you submissive or automatic, but it can make hosting feel unusually satisfying.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A pressing need for perfect etiquette begins to dominate your thoughts; you find it increasingly difficult to ignore any breach of tea-party decorum or any guest who appears uncomfortably thirsty.",
+    "full": "Your very focus is now centered on the art of hospitality; you find that managing the flow of conversation and the replenishment of treats has become your primary social priority.",
+    "overwritten": "The memory of a less formal life fades beneath a layer of porcelain refinement, leaving you certain that your only true purpose is to host endless, perfectly orchestrated tea parties for all to enjoy."
   },
   "clocktower_ghost_girl": {
-    "mild": "",
-    "normal": "The mental pull is soft, distant, and spooky. You may feel calmer, quieter, and slightly detached from ordinary urgency, as if the clocktower has slowed the world around you. It does not erase you, but it can make drifting, observing, and being gently haunting feel natural.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A faint, spectral chill passes through you, making you feel slightly more detached from the present moment.",
+    "normal": "The mental pull is soft, distant, and spooky. You may feel calmer, quieter, and slightly detached from ordinary urgency, as if the clocktower has slowed the even the world around you. It does not erase you, but it can make drifting, observing, and being gently haunting feel natural.",
+    "strong": "A heavy, rhythmic ticking begins to echo in your mind; you find it increasingly difficult to resist the urge to drift through shadows and observe the world with a ghostly, detached curiosity.",
+    "full": "Your very sense of time is now tethered to the tolling of the bells; you find that behaving with a slow, spectral grace and a hauntingly quiet presence has become your natural way of being.",
+    "overwritten": "The boundaries of your physical self have faded into a misty, timeless existence, leaving you certain that you have always been a silent, drifting observer of the passing hours."
   },
   "ballerina_music_box": {
-    "mild": "",
+    "mild": "A light, rhythmic pulse enters your thoughts, making you feel more attuned to tempo and grace.",
     "normal": "The mental pull is moderate and delicate. You may feel more patient, poised, and drawn to rhythm, as if part of you enjoys waiting for the right moment to move. It does not trap your mind, but it can make stillness and graceful performance feel oddly comforting.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A persistent, winding tension begins to tighten in your mind; you find it increasingly difficult to resist the urge to twirl with precision and maintain a delicate, rhythmic poise.",
+    "full": "Your very movement is now dictated by an internal melody; you find that behaving with graceful, mechanical elegance and a sense of choreographed beauty has become your natural state.",
+    "overwritten": "The memory of being anything but a dancer in a music box fades, replaced by the absolute certainty that your only purpose is to twirl endlessly to a beautiful, haunting tune."
   },
   "lady_knight_mouse": {
-    "mild": "",
+    "mild": "A sudden, squeaky surge of bravery makes you stand a little taller and more ready to defend the small and vulnerable.",
     "normal": "The mental pull is light and heroic. You may feel braver, more loyal, and more ready to defend tiny causes with oversized seriousness. It does not change your core self, but it can make small challenges feel like noble quests.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A fierce, chivalrous instinct begins to drive your actions; you find it increasingly difficult to ignore any perceived injustice or any small creature in need of a tiny protector.",
+    "full": "Your very sense of duty is now bound by an oath of miniature heroism; you find that approaching every minor obstacle as a grand, knightly quest has become your natural way of life.",
+    "overwritten": "The memory of a non-heroic existence has been replaced by a lifetime of tiny battles and noble triumphs, leaving you certain that you have always been the bravest defender of the smallest realms."
   },
   "crystal_fairy_queen": {
-    "mild": "",
+    "mild": "A sudden, crystalline shimmer enters your thoughts, making you feel slightly more poised and aware of your own importance.",
     "normal": "The mental pull is moderate and regal. You may feel more confident, elegant, and certain that your presence deserves attention. It does not replace your personality, but it can make royal poise, pretty authority, and sparkling self-importance feel tempting.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A heavy, glittering certainty begins to settle over you; you find it increasingly difficult to ignore the urge to command respect and carry yourself with a shimmering, royal grace.",
+    "full": "Your very essence is now shaped by a sense of crystalline authority; you find that behaving with elegant confidence and demanding the attention your beauty deserves has become your natural way of being.",
+    "overwritten": "The memory of any less-regal existence has been replaced by an absolute, sparkling conviction that you have always been a queen, destined to rule your glittering domain with effortless poise."
   },
   "pumpkin_girl": {
-    "mild": "",
-    "normal": "The mental pull is light and seasonal. You may feel warmer, cosier, and a little more whimsical, with an urge to spread autumn cheer and harmless mischief. It is not a deep personality shift, just a pumpkin-spiced nudge towards charm.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, warm scent of cinnamon and nutmeg makes you feel slightly more cheerful and prone to a cozy, autumnal mood.",
+    "normal": "The mental pull is light and seasonal. You may feel warmer, cosier, and a little more whimsical, with an urge to spread autumn cheer and harmless mischief. It is not a deep personality shift, just a pumpkin-spied nudge towards charm.",
+    "strong": "A heavy, harvest-like warmth settles in your thoughts; you find it increasingly difficult to resist the urge to embrace seasonal comforts and indulge in a bit of playful, autumnal mischief.",
+    "full": "Your very essence is now entwined with the spirit of autumn; you find that behaving with a cozy, whimsical charm and a love for all things pumpkin-spiced has become your natural state.",
+    "overwritten": "The memory of any less-seasonal life fades beneath a layer of harvest magic, leaving you certain that your only true purpose is to exist as a warm, charming embodiment of autumn's bountiful spirit."
   },
   "velvet_lounge_siren": {
-    "mild": "",
+    "mild": "A smooth, velvety warmth settles over your thoughts, making you feel slightly more poised and aware of your own allure.",
     "normal": "The mental pull is strong but optional, wrapped in glamour and performance. You remain yourself, but the form pushes more noticeably towards confidence, allure, and enjoying being seen. You may feel more aware of your voice, your smile, your body language, and the effect you have on a room. It does not force desire or behaviour, but leaning into feeling sexy, poised, and teasing may feel unusually natural.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A heavy, intoxicating confidence begins to settle in; you find it increasingly difficult to resist the urge to use every glance and gesture to captivate your audience.",
+    "full": "Your very presence becomes a seductive performance; you find that behaving with magnetic allure and theatrical poise has become your primary way of interacting with others.",
+    "overwritten": "The memory of any less-glamorous life has been smoothed away, leaving you certain that you have always been a creature of velvet charm, destined to enchant every room you enter."
   },
   "moonlit_vampire_lady": {
-    "mild": "",
+    "mild": "A cool, midnight elegance settles over your thoughts, making you feel slightly more mysterious and prone to a lingering, knowing gaze.",
     "normal": "The mental pull is strong but still yours to play with. You remain yourself, but the vampire glamour pushes towards elegance, mystery, and a sharper awareness of your own appeal. You may feel more patient, more dramatic, and more willing to let a look linger. The form can make feeling sexy, dangerous, and beautifully composed feel tempting, but it never erases your choices.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A sharp, predatory grace begins to sharpen your senses; you find it increasingly difficult to resist the urge to move with silent elegance and embrace the dark allure of your new nature.",
+    "full": "Your very presence becomes a study in nocturnal mystery; you find that behaving with dangerous charm and an irresistible, shadowy poise has become your primary way of interacting with the world.",
+    "overwritten": "The memory of sunlight and warmth fades into a cool, eternal night, leaving you certain that you have always been a creature of moonlight and shadow, eternally beautiful and beautifully dangerous."
   },
   "cabaret_catwoman": {
-    "mild": "",
-    "normal": "The mental pull is strong, playful, and glamour-heavy. You remain yourself, but the form pushes towards flirtier confidence, feline mischief, and a stronger enjoyment of being watched. You may feel more daring, more graceful, and more aware of how to use a smile, a pause, or a pose. It invites you to feel sexy and theatrical, without forcing you to act on it.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "mild": "A sudden, feline flair for the dramatic makes you find yourself posing just a little more provocatively for anyone watching.",
+    "normal": "The mental pull is strong, playful, and glamour-heavy. You remain yourself, but the form pushes towards flirtier confidence, feline mischief, and a stronger enjoyment of being watched. You may feel more daring, more graceful, and more aware of how to use a smile, a pose, or a well-timed pause. It invites you to feel sexy and theatrical, without forcing you to act on it.",
+    "strong": "A pressing urge for stage presence begins to drive your movements; you find it increasingly difficult to resist the temptation of a sultry glance or a playful, feline strut.",
+    "full": "Your very presence becomes part of the cabaret show; you find that behaving with theatrical charm and a teasing, predatory grace has become your primary way of interacting with others.",
+    "overwritten": "The boundary between performer and predator has vanished, leaving you certain that you have always been a creature of stage lights and feline allure, living for the thrill of the spotlight."
   },
   "rose_court_enchantress": {
-    "mild": "",
+    "mild": "A subtle, floral scent of crushed roses makes you feel slightly more composed and graceful.",
     "normal": "The mental pull is strong, elegant, and seductive in tone, but never controlling. You remain yourself, while the enchantress glamour pushes towards confidence, charm, and the pleasure of being beautiful on your own terms. You may feel more composed, more tempting, and more willing to let softness and danger sit together. The form invites allure, not obedience.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A thorny, enchanting pull begins to tug at your heart; you find it increasingly difficult to resist the urge to use your beauty as a tool of both charm and subtle intimidation.",
+    "full": "Your very presence is now draped in rose-petal elegance; you find that behaving with a captivating, dangerous allure has become your natural way of interacting with the world.",
+    "overwritten": "The memory of any less-enchanting life has been lost to the thorns, leaving you certain that you have always been a creature of rose-scented magic, destined to enchant and ensnare all who behold you."
   },
   "neon_demon_hostess": {
-    "mild": "",
+    "mild": "A sudden, electric buzz of excitement surges through you, making you feel slightly more daring and prone to a mischievous grin.",
     "normal": "The mental pull is strong, teasing, and openly glamourous. You remain yourself, but the form pushes towards bold confidence, playful temptation, and enjoying the feeling of being the most dangerous person in the room. You may feel more amused, more daring, and more aware of your own appeal. It does not make you cruel or controlled, but it can make mischief and sexy confidence feel deliciously easy to play.",
-    "strong": "",
-    "full": "",
-    "overwritten": ""
+    "strong": "A pulsing, neon energy begins to drive your every movement; you find it increasingly difficult to resist the urge to tease, tempt, and command the attention of everyone in your orbit.",
+    "full": "Your very essence is now infused with a dangerous, electrifying charm; you find that behaving with bold confidence and playful, tempting mischief has become your natural way of interacting with the world.",
+    "overwritten": "The memory of any less-daring life has been washed away by a wave of neon light, leaving you certain that you have always been a creature of electric allure, destined to enchant and tempt all who cross your path."
   }
 }
