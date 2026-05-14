@@ -1,6 +1,7 @@
 .env
 node_modules/
 assets/.masters/
+data/transformations/WIP
 data/users.json
 assets/transformations/*.psd
 assets/transformations/*.kra
