@@ -216,5 +216,54 @@
     "strong": "A pulsing, neon energy begins to drive your every movement; you find it increasingly difficult to resist the urge to tease, tempt, and command the attention of everyone in your orbit.",
     "full": "Your very essence is now infused with a dangerous, electrifying charm; you find that behaving with bold confidence and playful, tempting mischief has become your natural way of interacting with the world.",
     "overwritten": "The memory of any less-daring life has been washed away by a wave of neon light, leaving you certain that you have always been a creature of electric allure, destined to enchant and tempt all who cross your path."
+  },
+  "velvet_fetish_doll": {
+    "mild": "A sudden, plush softness settles over your thoughts, making you feel more delicate and prone to graceful, doll-like poses.",
+    "normal": "The mental pull is moderate and doll-like. You remain yourself, but the form nudges you towards poise, stillness, and a sweetly arranged kind of prettiness. Holding a pose, smiling neatly, or acting like a well-loved toy may feel more appealing than usual, but the choice to play along stays yours.",
+    "strong": "A heavy, enchanted stillness begins to settle in your mind; you find it increasingly difficult to resist the urge to maintain perfect, doll-like poses and sweet, painted smiles.",
+    "full": "Your very sense of self is becoming as carefully arranged as a display; you find that behaving with polite, static grace and a charmingly artificial sweetness has become your natural state.",
+    "overwritten": "The memory of being anything but a precious, enchanted object has faded, leaving you convinced that you have always been a beautifully figure, destined to be admired and cherished."
+  },
+  "honey_nymph": {
+    "mild": "A sweet, sticky sensation enters your thoughts, making you feel more sluggish and prone to slow, pleasurable movements.",
+    "normal": "The mental pull is light and sensory. You may feel more easily delighted by sweetness, more prone to enough precision in your movements, and more drawn to warmth and sunlight. It does not replace your personality, but it can make feeling deliciously sweet and slightly hedonistic feels strangely reasonable.",
+    "strong": "A persistent, viscous urge begins to dominate your thoughts, driving an irresistible compulsion to linger in warm, sunny spots and bask in the golden sweetness of your new existence.",
+    "full": "Your very essence is becoming as thick and sweet as honey; you find it increasingly difficult to resist the impulse to indulge in pure, sensory pleasure and the slow, heavy grace of your new nature.",
+    "overwritten": "The memory of being anything but a creature of nectar and sweetness has faded, leaving you convinced that your only true purpose is to exist as a delicious, golden masterpiece of nature."
+  },
+  "leather_biker_rogue": {
+    "mild": "A tough, rebellious spark ignites in your thoughts, making you feel more daring and prone to sudden, bold actions.",
+    "normal": "The mental pull is moderate and rugged. You remain yourself, but the rogue form nudges you towards confidence, rebellion, and a sense of untamed freedom. You may feel more at home in the scent of oil and leather, and more eager to embrace the thrill of the hunt.",
+    "strong": "A persistent, predatory energy begins to dominate your thoughts, driving an irresistible compulsion to move with a swaggering, unapologetic confidence and a sense of dangerous adventure.",
+    "full": "Your very essence is becoming as rugged and untamed as leather; you find that behaving with a rebellious, predatory grace has become your natural way of interacting with the world.",
+    "overwritten": "The memory of any less-daring life has been worn away by the road, leaving you certain that you have always been a creature of rebellion, adventure, and raw, tactile power."
+  },
+  "gilded_goddess": {
+    "mild": "A heavy, golden warmth settles over your thoughts, making you feel more monumental and poised.",
+    "normal": "The mental pull is moderate and regal. You remain yourself, but the goddess form nudges you towards grandeur, stillness, and a sense of unmoving perfection. You may feel more aware of your own breathtaking beauty and the reverence it commands.",
+    "strong": "A heavy, metallic certainty begins to settle in your mind; you enough find it increasingly difficult to resist the urge to move with slow, deliberate grace and maintain an imposing, statuesque presence.",
+    "full": "Your very essence is becoming as solid and magnificent as gold and marble; you find that behaving with a breathtaking, unmoving perfection has become your natural way of being.",
+    "overwritten": "The memory of any less-regal existence has been gilded away, leaving you certain that you have always been a living monument of opulence and beauty."
+  },
+  "satin_sleepwear_spirit": {
+    "mild": "A soft, dreamy lightness enters your thoughts, making you feel more ethereal and prone to gentle, swaying movements.",
+    "normal": "The mental pull is moderate and dreamy. You remain yourself, but the spirit form nudges you towards softness, intimacy, and a sense of weightless grace. You may feel more attuned to the quiet beauty of moonlight and the allure of profound, sleepy comfort.",
+    "strong": "A persistent, misty enchantment begins to dominate your thoughts, driving an irresistible urge to drift through shadows and embrace the soft, translucent magic of your new form.",
+    "full": "Your very sense of self is becoming as light and airy as satin; you find that behaving with a gentle, rhythmic sway and a sense of profound intimacy has become your natural state.",
+    "overwritten": "The memory of any heavier, more mundane existence has faded into the moonlight, leaving you certain that you have always been a beautiful, ethereal presence in the world."
+  },
+  "latex_android": {
+    "mild": "A subtle, rhythmic clicking enters your thoughts, making you feel more precise and attentive to mechanical details.",
+    "normal": "The mental pull is moderate and synthetic. You remain yourself, but the android form nudges you towards efficiency, precision, and a sleek, polished confidence. You may feel more calculated in your movements and more aware of your own striking, futuristic aesthetic.",
+    "strong": "A persistent, metallic efficiency begins to dominate your thoughts, driving an irresistible compulsion to move with seamless, high-gloss perfection and unerring accuracy.",
+    "full": "Your very cognition is becoming structured by logic and sleek precision; you find that behaving with a smooth, intimidatingly beautiful efficiency has become your natural state.",
+    "overwritten": "The memory of organic unpredictability has been replaced by the seamless, high-gloss certainty of a machine, leaving you convinced that you have always been a masterpiece of synthetic perfection."
+  },
+  "forest_nymph": {
+    "mild": "A soft, earthy lightness enters your thoughts, making you feel more grounded and connected to the woodland.",
+    "normal": "The mental pull is moderate and nature-bound. You remain yourself, but the nymph form nudges you towards a sense of deep connection with the forest, making you more attentive to the rustle of leaves and the scent of damp earth. You may feel more at home amongst the trees and plants.",
+    "strong": "A persistent, verdant energy begins to dominate your thoughts, driving an irresistible compulsion to move with the swaying rhythm of the forest and to protect the greenery around you.",
+    "full": "Your very essence is becoming as intertwined with the woods as the roots of an ancient oak; you find that behaving with a graceful, leafy lightness has become your natural way of being.",
+    "overwritten": "The memory of any less-natural existence has been lost to the forest floor, leaving you certain that you have always been a living part of the eternal, breathing woods."
   }
 }
