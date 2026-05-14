@@ -6,7 +6,6 @@ const { handleTransform } = require("./transform");
 const { handleRandomTransform } = require("./randomtransform");
 const { handleBBHelp } = require("./bbhelp");
 const { handleWhatAmI } = require("./whatami");
-const { handleTransformationNotes } = require("./transformationnotes");
 const {
   handleSettings,
   handleSettingsSelectMenu,
@@ -24,7 +23,6 @@ const commandHandlers = {
   randomtransform: handleRandomTransform,
   bbhelp: handleBBHelp,
   whatami: handleWhatAmI,
-  transformationnotes: handleTransformationNotes,
   settings: handleSettings,
 };
 

@@ -58,22 +58,6 @@ const commands = [
     .toJSON(),
 
   new SlashCommandBuilder()
-    .setName("transformationnotes")
-    .setDescription("Manage private DM notes for transformation roleplay.")
-    .addStringOption((option) =>
-      option
-        .setName("action")
-        .setDescription("Choose what to do with Transformation Notes.")
-        .setRequired(true)
-        .addChoices(
-          { name: "On", value: "on" },
-          { name: "Off", value: "off" },
-          { name: "Status", value: "status" }
-        )
-    )
-    .toJSON(),
-
-  new SlashCommandBuilder()
     .setName("transform")
     .setDescription("Trigger a silly transformation.")
     .addSubcommand((subcommand) =>

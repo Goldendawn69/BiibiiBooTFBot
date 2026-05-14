@@ -21,8 +21,6 @@ to receive.
 - `/resetform` clears a user's current form while keeping them registered.
 - `/settings` lets users manage Transformation Notes and choose their Mental
   Effects range with Discord select menus.
-- `/transformationnotes` is still available as a direct shortcut for private
-  note status.
 - Command cooldowns and optional channel restriction for game commands.
 - Transformation data validation with `npm run validate-data`.
 - User registration, settings, and current-form state are stored locally in
@@ -51,7 +49,6 @@ biibiibooTFBot/
       resetform.js                 Handles /resetform
       settings.js                  Handles /settings and settings select menus
       transform.js                 Handles /transform me and /transform user
-      transformationnotes.js       Handles /transformationnotes
       unregister.js                Handles /unregister
       whatami.js                   Handles /whatami
     config/
@@ -131,14 +128,12 @@ logged in as.
 1. A user runs `/register` to opt in.
 2. They can use `/settings` to enable private Transformation Notes and choose
    their Mental Effects range.
-3. They can also use `/transformationnotes action:on` as a shortcut if they
-   only want to toggle private notes by DM.
-4. They can transform themselves with `/transform me`, be transformed by another
+3. They can transform themselves with `/transform me`, be transformed by another
    user with `/transform user target:@user`, or be selected by
    `/randomtransform`.
-5. They can check their saved form with `/form` or get richer DM details with
+4. They can check their saved form with `/form` or get richer DM details with
    `/whatami`.
-6. They can clear their current form with `/resetform` or fully opt out with
+5. They can clear their current form with `/resetform` or fully opt out with
    `/unregister`.
 
 The bot keeps consent simple: users must be registered before another user or
@@ -201,23 +196,6 @@ Available Mental Effects levels are:
 When a user receives a Transformation Note, the bot randomly picks one tier from
 the user's saved range and uses that tier's text if the selected transformation
 has it.
-
-### `/transformationnotes action:on`
-
-Enables private Transformation Notes for the command user. When that user is
-transformed, the bot may DM them an optional private note about how the change
-feels. Notes can include physical and mental roleplay prompts.
-
-Transformation Notes are opt-in, private, and roleplay prompts only.
-
-### `/transformationnotes action:off`
-
-Disables private Transformation Notes. Public transformation results still work,
-but the bot will not send private note DMs to that user.
-
-### `/transformationnotes action:status`
-
-Shows whether Transformation Notes are currently enabled for the command user.
 
 ### `/form`
 
