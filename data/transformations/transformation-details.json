@@ -195,7 +195,7 @@
       "job_role",
       "glamour"
     ],
-    "text": "{user} has been transformed into a glamorous stage magician with a dramatic top hat, sparkling tuxedo tails, white gloves, and a wand ready for trouble. Playing cards now flutter around them on cue, glitter bursts from every grand gesture, and their favourite trick is making small objects vanish until everyone gives up looking."
+    "text": "{user} has been transformed into a glamorous stage magician with warm brown skin, flowing black hair, golden jhumka earrings, ornate embroidered tuxedo tails, white gloves, and a dramatic top hat trimmed with rich burgundy and gold. Playing cards now flutter around them on cue, glitter bursts from every graceful flourish, and their wand seems especially good at making small objects vanish into places nobody thought to check."
   },
   {
     "id": "tea_party_hostess",
@@ -235,7 +235,7 @@
       "tiny",
       "fantasy"
     ],
-    "text": "{user} has become a tiny lady knight mouse with a thimble helmet and a heroic little cape. They are extremely brave, very squeaky, and prepared to defend the realm from crumbs, cats, and suspiciously large biscuits."
+    "text": "{user} has become a brave little lady knight mouse, complete with round ears, whiskers, a thimble helmet, polished heart-trimmed armour, and a sweeping red cape. Armed with a tiny sword and a biscuit-marked shield, they are ready to defend the realm from crumbs, cats, and any suspicious snack that looks like it might fight back."
   },
   {
     "id": "crystal_fairy_queen",
@@ -246,7 +246,7 @@
       "magic",
       "glamour"
     ],
-    "text": "{user} has been transformed into a tiny crystal fairy queen. Their wings glitter like stained glass, their crown is far too dramatic for their size, and they now demand royal respect from anyone taller than a mug."
+    "text": "{user} has been transformed into a tiny crystal fairy queen with shimmering blue gemlike skin, lavender hair, stained-glass wings, and a crown far too dramatic for anyone their size. Every pose scatters rainbow sparkles, every royal gesture catches the light, and they now expect proper respect from anyone who is not currently small enough to fit in a teacup."
   },
   {
     "id": "pumpkin_girl",
@@ -256,7 +256,7 @@
       "food",
       "fantasy"
     ],
-    "text": "{user} has been transformed into a cheerful pumpkin girl with warm orange skin, golden eyes, and wild leafy green hair topped with a little pumpkin stem and curling vines. Her outfit has become a bright pumpkin-petal dress with autumn leaves around the collar and waist, while a green vine curls around her wrist like a playful bracelet. She now smells faintly of cinnamon and fallen leaves, keeps scattering tiny seed-shaped sparkles when she moves, and seems very pleased with her new seasonal charm."
+    "text": "{user} has been transformed into a cheerful pumpkin girl with warm orange skin, golden eyes, and huge leafy green hair that curls like living vines. Their outfit has become a bright pumpkin-petal dress with autumn leaves around the collar and waist, while a playful vine bracelet winds around one wrist. They now smell faintly of cinnamon and fallen leaves, scatter tiny seed-shaped sparkles when they move, and look far too pleased with their new harvest-season charm."
   },
   {
     "id": "velvet_lounge_siren",
@@ -275,7 +275,7 @@
       "fantasy",
       "glamour"
     ],
-    "text": "{user} has been transformed into a moonlit vampire lady with soft pale skin, large bright eyes, and glossy dark hair styled in a cute retro wave. Their outfit has become an elegant gothic dress in deep black and crimson tones, with a dramatic collar, delicate lace details, and ruby jewellery that glints in the moonlight. They now wear a sweet but slightly mischievous smile, looking more charming than terrifying, with all the polished spooky glamour of a stylish midnight hostess from a vintage comic world."
+    "text": "{user} has been transformed into a moonlit vampire lady with soft pale skin, bright mischievous eyes, pointed ears, tiny fangs, and glossy black hair swept into a cute retro wave. Their outfit has become an elegant black and crimson gothic gown with lace trim, long gloves, a dramatic cape collar, and ruby jewellery glowing beneath the full moon. They now smile sweetly over a glass of suspiciously red drink, looking less like a nightmare creature and more like the most charming hostess at the midnight monster ball."
   },
   {
     "id": "cabaret_catwoman",
@@ -296,7 +296,7 @@
       "plant",
       "glamour"
     ],
-    "text": "{user} has become a rose court enchantress with long flowing auburn hair, bright green eyes, and a confident smile that looks equal parts welcoming and dangerous. Their outfit has become a rich burgundy gown with a fitted corset bodice, layered rose-petal skirts, thorny vine details, and deep crimson roses blooming across the dress, jewellery, and crown. Thorn-wrapped bracelets curl around their arms, loose petals drift around them, and one graceful hand is always lifted as if they are calmly summoning beauty, trouble, or both at once."
+    "text": "{user} has become a rose court enchantress with deep brown skin, flowing dark auburn curls, bright green eyes, and a confident smile that suggests they already know exactly how this ends. Their burgundy gown has blossomed into layered rose-petal skirts, thorn-laced sleeves, ruby jewellery, and a crown of crimson roses and dark curling briars. Thorny bracelets coil around their arms, petals drift at their command, and one graceful hand now summons a floating rose whenever they feel like being beautiful, dangerous, or just a little dramatic."
   },
   {
     "id": "neon_demon_hostess",
@@ -308,6 +308,6 @@
       "glamour",
       "job_role"
     ],
-    "text": "{user} has been transformed into a neon demon hostess with small polished horns, glowing eyes, a wicked smile, and a sleek black-and-purple outfit suited to a very questionable nightclub. Their tail flicks whenever they are amused, which is often, and their voice now has the warm confidence of someone offering a deal they definitely expect to win. They are not exactly evil, but they are absolutely the reason the evening now has terms and conditions."
+    "text": "{user} has been transformed into a neon demon hostess with rich red skin, polished horns, glowing golden eyes, pointed ears, sharp little fangs, and a smile that promises trouble with excellent customer service. Their black-and-purple nightclub outfit now comes with glossy gloves, jewel details, a swishing devil tail, and just enough sparkle to make every bad idea look expensive. They carry a tray of dangerously pretty cocktails, speak like every deal is already half-signed, and are absolutely the reason the evening now has terms and conditions."
   }
 ]
