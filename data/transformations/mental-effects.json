@@ -259,11 +259,18 @@
     "full": "Your very cognition is becoming structured by logic and sleek precision; you find that behaving with a smooth, intimidatingly beautiful efficiency has become your natural state.",
     "overwritten": "The memory of organic unpredictability has been replaced by the seamless, high-gloss certainty of a machine, leaving you convinced that you have always been a masterpiece of synthetic perfection."
   },
+  "luminous_water_nymph": {
+    "mild": "A refreshing, fluid clarity washes through your thoughts, making you feel more rhythmic and relaxed.",
+    "normal": "The mental pull is gentle and flowing. You may feel a dreamy, drifting quality to your thoughts, as if you are floating in a warm, clear sea. It encourages a calm, graceful presence, though the urge to simply drift with the current might feel strangely persuasive. Your identity remains yours, but life feels a little more fluid.",
+    "strong": "A deep, tidal pull begins to sway your focus, making it harder to hold onto rigid or heavy thoughts as they are washed away by a soothing, watery calm.",
+    "full": "Your very sense of self becomes as fluid as the tides; you find that maintaining a solid, stationary life is becoming difficult when you feel so much more natural in a state of constant, beautiful flow.",
+    "overwritten": "The memory of being solid and earth-bound has dissolved into the vast, shimmering blue. You are now one with the currents, existing solely to drift through the deeps, mesmerized by the eternal, rhythmic pulse of the water."
+  },
   "forest_nymph": {
     "mild": "A soft, earthy lightness enters your thoughts, making you feel more grounded and connected to the woodland.",
-    "normal": "The mental pull is moderate and nature-bound. You remain yourself, but the nymph form nudges you towards a sense of deep connection with the forest, making you more attentive to the rustle of leaves and the scent of damp earth. You may feel more at home amongst the trees and plants.",
-    "strong": "A persistent, verdant energy begins to dominate your thoughts, driving an irresistible compulsion to move with the swaying rhythm of the forest and to protect the greenery around you.",
-    "full": "Your very essence is becoming as intertwined with the woods as the roots of an ancient oak; you find that behaving with a graceful, leafy lightness has become your natural way of being.",
-    "overwritten": "The memory of any less-natural existence has been lost to the forest floor, leaving you certain that you have always been a living part of the eternal, breathing woods."
+    "normal": "The mental pull is moderate and nature-bound. You may feel more connected to the natural world, as if the rustle of leaves and the scent of damp earth are calling to you. It does not change who you are, but it makes the sounds of the forest feel much more intimate and meaningful.",
+    "strong": "A persistent, verdant energy begins to dominate your thoughts; you find it increasingly difficult to ignore the needs of the greenery around you or the rhythmic breathing of the woods.",
+    "full": "Your very essence becomes as intertwined with the forest as the roots of an ancient oak; you find that living in harmony with the wild has become your natural state of being.",
+    "overwritten": "The memory of a life away from the trees is lost to the rustling leaves. You are now one with the eternal, breathing woods, existing only to flourish within their emerald embrace."
   }
 }

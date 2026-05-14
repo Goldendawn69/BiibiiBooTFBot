@@ -364,5 +364,16 @@
       "fantasy"
     ],
     "text": "{user} has been transformed into a radiant forest nymph with soft green skin, flowing dark emerald hair, pointed ears, and blossoms tucked through every curl. Their outfit has become a delicate weave of living leaves, curling vines, and bright wildflowers, all shifting gently as if the forest itself is dressing them. Butterflies, petals, and golden sparkles drift around them wherever they move, leaving the scent of fresh leaves, damp earth, and blooming woodland flowers in their wake."
+  },
+  {
+    "id": "luminous_water_nymph",
+    "name": "Luminous Water N nymph",
+    "categories": [
+      "creature",
+      "fantasy",
+      "magic",
+      "water"
+    ],
+    "text": "{user} has been transformed into a luminous water nymph, their form becoming a breathtaking cascade of living, shimmering liquid. Their skin is a translucent, deep cerulean that catches the light in dazzling ripples, and their hair flows like a weightless underwater current, drifting upwards as if gravity were merely a suggestion. They wear garments fashioned from sea-foam lace and delicate strands of glowing pearls that cling to their fluid curves. As they move, they leave behind a trailing mist of refreshing spray and soft, rhythmic splashes, looking every bit the mesmerizing, aquatic spirit who has emerged from the deep to captivate all who gaze upon them."
   }
 ]

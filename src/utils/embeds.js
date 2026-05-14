@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { AttachmentBuilder, EmbedBuilder } = require("discord.js");
+const { getHostedTransformationImageUrl } = require('./imageUrls');
 
 const transformationAssetsPath = path.join(
   __dirname,
@@ -13,12 +14,27 @@ const transformationAssetsPath = path.join(
 function getTransformationImageAttachment(transformation, embed) {
   const files = [];
 
+  const hostedImageUrl = getHostedTransformationImageUrl(transformation);
+  console.log("Hosted image URL:", hostedImageUrl);
+
+  if (hostedImageUrl) {
+    embed.setImage(hostedImageUrl);
+
+    embed.addFields({
+      name: "Artwork",
+      value: `[View full image](${hostedImageUrl})`,
+      inline: false,
+    });
+
+    return files;
+  }
+
   const imageFileName = `${transformation.id}.png`;
   const imagePath = path.join(transformationAssetsPath, imageFileName);
 
   console.log("Transformation ID:", transformation.id);
-  console.log("Looking for image:", imagePath);
-  console.log("Image exists:", fs.existsSync(imagePath));
+  console.log("Looking for local image:", imagePath);
+  console.log("Local image exists:", fs.existsSync(imagePath));
 
   if (fs.existsSync(imagePath)) {
     const attachment = new AttachmentBuilder(imagePath, {
