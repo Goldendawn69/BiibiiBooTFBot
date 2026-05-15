@@ -8,13 +8,14 @@ async function handleResetForm(interaction) {
 
   if (!user?.registered) {
     await interaction.reply({
-      content: "You are not registered yet. Use `/register` first if you want to join the silly transformation games.",
+      content:
+        "You are not registered yet. Use `/register` first if you want to join the silly transformation games.",
       flags: MessageFlags.Ephemeral,
     });
     return;
   }
 
-  if (!user.currentForm) {
+  if (!user.currentForm && !user.currentTransformationId) {
     await interaction.reply({
       content: "You do not currently have a form to reset.",
       flags: MessageFlags.Ephemeral,
@@ -25,13 +26,15 @@ async function handleResetForm(interaction) {
   users[userId] = {
     ...user,
     currentForm: null,
+    currentTransformationId: null,
     formResetAt: new Date().toISOString(),
   };
 
   saveUsers(users);
 
   await interaction.reply({
-    content: "Your current form has been reset. You are back to your usual suspiciously normal self.",
+    content:
+      "Your current form has been reset. You are back to your usual suspiciously normal self.",
     flags: MessageFlags.Ephemeral,
   });
 }

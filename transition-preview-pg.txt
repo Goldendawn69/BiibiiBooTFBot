@@ -1,0 +1,269 @@
+Physical Transition Preview
+===========================
+
+Transformations loaded: 39
+Physical detail level: pg
+
+Initial / Original Body Transitions
+-----------------------------------
+Checks how transformations read when the user has no previous form.
+
+Original Body → Cat Café Girl
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your original body begins reshaping into a feminine version of the Cat Café Girl form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Your lower body changes fully, settling into the new feminine form.
+
+Original Body → Boutique Mannequin
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: plastic, sexForm: smooth_neutral
+
+Your original body begins reshaping into a feminine version of the Boutique Mannequin form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Your masculine details smooth away completely, leaving a clean, seamless surface behind. At the same time, your living skin, muscle, and natural warmth begin to shift, becoming sleek polished plastic, firm and artificial, with a display-ready finish.
+
+Original Body → Haunted Teapot
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: non_humanoid_object, bodyMaterial: porcelain, sexForm: none
+
+Your original body begins losing its human shape as the Haunted Teapot transformation takes over. Your proportions compress and simplify, skin and muscle giving way to the new surface texture, structure, and movement of the final form. Your sex is erased completely, leaving you without genitals as your body loses its human shape. At the same time, your warm living body starts to rework itself beneath the surface, smoothing into ceramic perfection, glossy and delicate, with painted features and posed grace.
+
+Original Body → Bubble Mermaid
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_creature, bodyMaterial: living_flesh, sexForm: feminine
+
+Your original body begins reshaping into a feminine version of the Bubble Mermaid form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Your most private details reshape to complete the new feminine form.
+
+Original Body → Living Plush Bunny
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_creature, bodyMaterial: plush_fabric, sexForm: smooth_neutral
+
+Your original body begins reshaping into a feminine version of the Living Plush Bunny form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Between your thighs, every masculine detail fades into polished smoothness. At the same time, your warm living body starts to rework itself beneath the surface, rounding into plush softness, padded limbs, fuzzy texture, and huggable stuffed shape.
+
+Original Body → Clocktower Ghost Girl
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: ghostly_mist, sexForm: feminine
+
+Your original body begins reshaping into a feminine version of the Clocktower Ghost Girl form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Your body completes the feminine change in its most private details. At the same time, your warm living body starts to rework itself beneath the surface, fading into pale ghostly mist, translucent edges, weightless movement, and a soft spectral glow.
+
+Original Body → Tin Robot Assistant
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: metal, sexForm: smooth_neutral
+
+Your original body begins reshaping into a feminine version of the Tin Robot Assistant form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Between your thighs, every masculine detail fades into polished smoothness. At the same time, your natural flesh softens, tightens, and begins changing into something new, becoming polished metal and clockwork precision, with seams, plates, and mechanical motion.
+
+Original Body → Midnight Latex Android
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: synthetic_skin, sexForm: feminine
+
+Your original body begins reshaping into a feminine version of the Midnight Latex Android form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Your body completes the feminine change in its most private details. At the same time, your warm living body starts to rework itself beneath the surface, settling into smooth synthetic skin, hidden robotic structure, precise movement, and an artificial humanoid finish.
+
+Original Body → Pumpkin Girl
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_creature, bodyMaterial: plant_matter, sexForm: feminine
+
+Your original body begins reshaping into a feminine version of the Pumpkin Girl form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Your most private details reshape to complete the new feminine form. At the same time, your living skin, muscle, and natural warmth begin to shift, blooming into living plant matter, leafy details, curling vines, blossoms, and earthy texture.
+
+Original Body → Luminous Water Nymph
+From profile: bodyShape: masculine_humanoid, bodyMaterial: living_flesh, sexForm: masculine
+To profile: bodyShape: feminine_creature, bodyMaterial: water, sexForm: feminine
+
+Your original body begins reshaping into a feminine version of the Luminous Water Nymph form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation. Your lower body changes fully, settling into the new feminine form. At the same time, your living skin, muscle, and natural warmth begin to shift, settling into living water, your outline rippling with every movement and splash of light.
+
+
+Humanoid To Object / Toy Transitions
+------------------------------------
+Checks shrinking, simplifying, smoothing, and object-like body changes.
+
+Cat Café Girl → Haunted Teapot
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: non_humanoid_object, bodyMaterial: porcelain, sexForm: none
+
+Your Cat Café Girl form compresses and simplifies, living curves and flexible movement giving way to the object-like shape of a Haunted Teapot. Your feminine details vanish completely, leaving you with no genitals at all as your body becomes something no longer built like a person. At the same time, your warm living body starts to rework itself beneath the surface, settling into glossy porcelain, painted features, delicate surfaces, and doll-like stillness.
+
+Magical Maid → Suspicious Rubber Duck
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: animal_object, bodyMaterial: rubber, sexForm: none
+
+Your Magical Maid form compresses and simplifies, living curves and flexible movement giving way to the object-like shape of a Suspicious Rubber Duck. Your feminine details vanish completely, leaving you with no genitals at all as your body becomes something no longer built like a person. At the same time, your warm living body starts to rework itself beneath the surface, settling into flexible rubber, shiny surfaces, rounded edges, and bath-toy wobble.
+
+Moonlit Witch → Boutique Mannequin
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: plastic, sexForm: smooth_neutral
+
+Your Moonlit Witch form reshapes into the Boutique Mannequin form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Your private details vanish into the new body, sealed away into a smooth, featureless finish. At the same time, your warm living body starts to rework itself beneath the surface, settling into smooth rigid plastic, polished artificial features, and display-perfect stillness.
+
+Leather Biker Rogue → Enchanted Doll
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: porcelain, sexForm: smooth_neutral
+
+Your Leather Biker Rogue form reshapes into the Enchanted Doll form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Your feminine details smooth away completely, leaving a clean, seamless surface behind. At the same time, your warm living body starts to rework itself beneath the surface, settling into glossy porcelain, painted features, delicate surfaces, and doll-like stillness.
+
+Velvet Lounge Siren → Ballerina Music Box
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: porcelain, sexForm: smooth_neutral
+
+Your Velvet Lounge Siren form reshapes into the Ballerina Music Box form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Your feminine details smooth away completely, leaving a clean, seamless surface behind. At the same time, your natural flesh softens, tightens, and begins changing into something new, smoothing into ceramic perfection, glossy and delicate, with painted features and posed grace.
+
+
+Object / Toy To Humanoid Transitions
+------------------------------------
+Checks object forms becoming flexible humanoid or creature bodies again.
+
+Haunted Teapot → Cat Café Girl
+From profile: bodyShape: non_humanoid_object, bodyMaterial: porcelain, sexForm: none
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Haunted Teapot form loosens and reorganises, rigid or simplified details giving way to a softer, more flexible feminine body as the Cat Café Girl shape takes over. As your body becomes humanoid again, feminine detail forms between your thighs. At the same time, your porcelain shell trembles as its painted stillness starts to give way, becoming warm living flesh again, with soft skin, natural motion, and expressive features.
+
+Suspicious Rubber Duck → Magical Maid
+From profile: bodyShape: animal_object, bodyMaterial: rubber, sexForm: none
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Suspicious Rubber Duck form loosens and reorganises, rigid or simplified details giving way to a softer, more flexible feminine body as the Magical Maid shape takes over. The non-human shape unfolds into a feminine body, complete in its most private details. At the same time, your flexible rubber surface pulls and bends as your toy-like body starts to change, becoming warm living flesh again, with soft skin, natural motion, and expressive features.
+
+Boutique Mannequin → Moonlit Witch
+From profile: bodyShape: feminine_humanoid, bodyMaterial: plastic, sexForm: smooth_neutral
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Boutique Mannequin form reshapes into the Moonlit Witch form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Your smooth sexless surface reforms into the private shape of a woman. At the same time, your smooth plastic surface starts to loosen from its fixed, artificial shape, settling into organic skin, flexible joints, natural warmth, and lifelike movement.
+
+Enchanted Doll → Leather Biker Rogue
+From profile: bodyShape: feminine_humanoid, bodyMaterial: porcelain, sexForm: smooth_neutral
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Enchanted Doll form reshapes into the Leather Biker Rogue form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Feminine detail forms where there had only been smoothness before. At the same time, your ceramic body begins to loosen, its polished surface no longer holding firm, becoming warm living flesh again, with soft skin, natural motion, and expressive features.
+
+Ballerina Music Box → Velvet Lounge Siren
+From profile: bodyShape: feminine_humanoid, bodyMaterial: porcelain, sexForm: smooth_neutral
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Ballerina Music Box form reshapes into the Velvet Lounge Siren form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Between your thighs, the seamless surface reshapes into a feminine form. At the same time, your ceramic body begins to loosen, its polished surface no longer holding firm, settling into organic skin, flexible joints, natural warmth, and lifelike movement.
+
+
+Major Material Transitions
+--------------------------
+Checks whether material wording feels natural across important changes.
+
+Clocktower Ghost Girl → Midnight Latex Android
+From profile: bodyShape: feminine_humanoid, bodyMaterial: ghostly_mist, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: synthetic_skin, sexForm: feminine
+
+Your Clocktower Ghost Girl form reshapes into the Midnight Latex Android form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your translucent edges stop drifting freely and begin drawing into a new form, settling into smooth synthetic skin, hidden robotic structure, precise movement, and an artificial humanoid finish.
+
+Tin Robot Assistant → Ballerina Music Box
+From profile: bodyShape: feminine_humanoid, bodyMaterial: metal, sexForm: smooth_neutral
+To profile: bodyShape: feminine_humanoid, bodyMaterial: porcelain, sexForm: smooth_neutral
+
+Your Tin Robot Assistant form reshapes into the Ballerina Music Box form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your metal plating, precise joints, and mechanical rigidity begin to break apart, settling into glossy porcelain, painted features, delicate surfaces, and doll-like stillness.
+
+Living Plush Bunny → Moonlit Vampire Lady
+From profile: bodyShape: feminine_creature, bodyMaterial: plush_fabric, sexForm: smooth_neutral
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Living Plush Bunny form reshapes into the Moonlit Vampire Lady form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Between your thighs, the seamless surface reshapes into a feminine form. At the same time, your plush fabric, soft stuffing, and stitched seams begin to pull into a new shape, settling into organic skin, flexible joints, natural warmth, and lifelike movement.
+
+Forest Nymph → Honeyed Nectar Nymph
+From profile: bodyShape: feminine_creature, bodyMaterial: plant_matter, sexForm: feminine
+To profile: bodyShape: feminine_creature, bodyMaterial: honey, sexForm: feminine
+
+Your Forest Nymph form reshapes into the Honeyed Nectar Nymph form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your leafy body rustles and shifts as vines and petals pull into a new pattern, settling into golden syrupy shine, sticky smoothness, and slow nectar-like movement.
+
+Honeyed Nectar Nymph → Tin Robot Assistant
+From profile: bodyShape: feminine_creature, bodyMaterial: honey, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: metal, sexForm: smooth_neutral
+
+Your Honeyed Nectar Nymph form reshapes into the Tin Robot Assistant form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Your feminine details smooth away completely, leaving a clean, seamless surface behind. At the same time, your amber body stretches in slow syrupy ribbons as it starts to reform, locking into smooth metal panels, neat mechanical joints, and softly humming machinery.
+
+Boutique Mannequin → Luminous Water Nymph
+From profile: bodyShape: feminine_humanoid, bodyMaterial: plastic, sexForm: smooth_neutral
+To profile: bodyShape: feminine_creature, bodyMaterial: water, sexForm: feminine
+
+Your Boutique Mannequin form reshapes into the Luminous Water Nymph form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Your smooth sexless surface reforms into the private shape of a woman. At the same time, your polished artificial surface softens from its fixed plastic shape, becoming fluid and translucent, with watery skin, smooth currents, and droplets trailing behind.
+
+Rainbow Slime Girl → Crystal Fairy Queen
+From profile: bodyShape: feminine_creature, bodyMaterial: slime, sexForm: feminine
+To profile: bodyShape: small_feminine_humanoid, bodyMaterial: stone, sexForm: feminine
+
+Your Rainbow Slime Girl form reshapes into the Crystal Fairy Queen form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your gooey form wobbles and pulls inward, its glossy colours shifting as it reshapes, becoming cool carved stone, heavy and polished, with statue-like grace and stillness.
+
+Porcelain Princess → Living Plush Bunny
+From profile: bodyShape: feminine_humanoid, bodyMaterial: porcelain, sexForm: smooth_neutral
+To profile: bodyShape: feminine_creature, bodyMaterial: plush_fabric, sexForm: smooth_neutral
+
+Your Porcelain Princess form reshapes into the Living Plush Bunny form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your ceramic body begins to loosen, its polished surface no longer holding firm, becoming soft fabric and stuffing, with stitched details and a cuddly toy-like body.
+
+
+Same Material / Shape-Only Transitions
+--------------------------------------
+Checks cases where material does not change, so shape wording has to carry the scene.
+
+Cat Café Girl → Moonlit Witch
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Cat Café Girl form reshapes into the Moonlit Witch form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form.
+
+Moonlit Witch → Moonlit Vampire Lady
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Moonlit Witch form reshapes into the Moonlit Vampire Lady form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form.
+
+Magical Maid → Tea Party Hostess
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Magical Maid form reshapes into the Tea Party Hostess form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form.
+
+Pocket Fairy → Garden Gnome Lady
+From profile: bodyShape: small_feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: small_feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Pocket Fairy form reshapes into the Garden Gnome Lady form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form.
+
+Bubble Mermaid → Neon Demon Hostess
+From profile: bodyShape: feminine_creature, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_creature, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Bubble Mermaid form reshapes into the Neon Demon Hostess form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form.
+
+
+Creature / Non-Standard Body Transitions
+----------------------------------------
+Checks tails, wings, small bodies, supernatural bodies, and less ordinary silhouettes.
+
+Cat Café Girl → Bubble Mermaid
+From profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_creature, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Cat Café Girl form reshapes into the Bubble Mermaid form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form.
+
+Bubble Mermaid → Cat Café Girl
+From profile: bodyShape: feminine_creature, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+
+Your Bubble Mermaid form reshapes into the Cat Café Girl form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form.
+
+Pocket Fairy → Tiny Clockwork Dragon
+From profile: bodyShape: small_feminine_humanoid, bodyMaterial: living_flesh, sexForm: feminine
+To profile: bodyShape: feminine_creature, bodyMaterial: metal, sexForm: feminine
+
+Your Pocket Fairy form reshapes into the Tiny Clockwork Dragon form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your natural flesh softens, tightens, and begins changing into something new, forming polished metal plating, precise joints, mechanical seams, and a faint artificial hum.
+
+Tiny Clockwork Dragon → Living Plush Bunny
+From profile: bodyShape: feminine_creature, bodyMaterial: metal, sexForm: feminine
+To profile: bodyShape: feminine_creature, bodyMaterial: plush_fabric, sexForm: smooth_neutral
+
+Your Tiny Clockwork Dragon form reshapes into the Living Plush Bunny form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. Between your thighs, every feminine detail fades into polished smoothness. At the same time, your metal plating, precise joints, and mechanical rigidity begin to break apart, becoming soft fabric and stuffing, with stitched details and a cuddly toy-like body.
+
+Clocktower Ghost Girl → Forest Nymph
+From profile: bodyShape: feminine_humanoid, bodyMaterial: ghostly_mist, sexForm: feminine
+To profile: bodyShape: feminine_creature, bodyMaterial: plant_matter, sexForm: feminine
+
+Your Clocktower Ghost Girl form reshapes into the Forest Nymph form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your ghostly form pulls together, pale vapour thickening as the old shape fades, blooming into living plant matter, leafy details, curling vines, blossoms, and earthy texture.
+
+Forest Nymph → Clocktower Ghost Girl
+From profile: bodyShape: feminine_creature, bodyMaterial: plant_matter, sexForm: feminine
+To profile: bodyShape: feminine_humanoid, bodyMaterial: ghostly_mist, sexForm: feminine
+
+Your Forest Nymph form reshapes into the Clocktower Ghost Girl form, keeping a feminine silhouette while its features, outfit, posture, and movement change to match the new form. At the same time, your leaves, vines, blossoms, and living plant matter begin to rearrange, becoming light and spectral, with misty edges, transparent skin, and a quiet ghostly shimmer.
+

@@ -1,14 +1,14 @@
 const fs = require("fs");
 const path = require("path");
-const {
-  AttachmentBuilder,
-  EmbedBuilder,
-  MessageFlags,
-} = require("discord.js");
-const { getHostedTransformationImageUrl } = require("../utils/imageUrls");
+const { AttachmentBuilder, MessageFlags } = require("discord.js");
 const { loadTransformations } = require("../utils/transformations");
+const {
+  MENTAL_EFFECT_CONTENT_LEVELS,
+  getMentalEffectLevelLabel,
+} = require("../utils/mentalEffects");
 
 const MAX_MESSAGE_LENGTH = 1800;
+
 const transformationAssetsPath = path.join(
   __dirname,
   "..",
@@ -17,8 +17,26 @@ const transformationAssetsPath = path.join(
   "transformations"
 );
 
+function formatCategories(categories) {
+  if (!Array.isArray(categories) || categories.length === 0) {
+    return "uncategorised";
+  }
+
+  return categories.join(", ");
+}
+
+function findTransformationById(transformations, id) {
+  const normalisedId = id.trim().toLowerCase();
+
+  return transformations.find(
+    (transformation) => transformation.id.toLowerCase() === normalisedId
+  );
+}
+
 function getLocalTransformationImagePath(transformation) {
-  if (!transformation?.id) return null;
+  if (!transformation?.id) {
+    return null;
+  }
 
   const imagePath = path.join(
     transformationAssetsPath,
@@ -28,24 +46,86 @@ function getLocalTransformationImagePath(transformation) {
   return fs.existsSync(imagePath) ? imagePath : null;
 }
 
-function findTransformationById(transformations, id) {
-  const normalizedId = id.trim().toLowerCase();
+function formatEffectLevel(label, value) {
+  if (!value) {
+    return null;
+  }
 
-  return transformations.find(
-    (transformation) => transformation.id.toLowerCase() === normalizedId
-  );
+  return `**${label}:** ${value}`;
+}
+
+function formatPhysicalEffectsBlock(physicalEffects) {
+  if (!physicalEffects) {
+    return "**Physical Effects:**\nNo physical effects are available for this transformation.";
+  }
+
+  if (typeof physicalEffects === "string") {
+    return ["**Physical Effects:**", physicalEffects].join("\n");
+  }
+
+  return "**Physical Effects:**\nPhysical effects are in an unsupported format.";
+}
+
+function formatMentalEffectsBlock(mentalEffects) {
+  if (!mentalEffects) {
+    return "**Mental Effects:**\nNo mental effects are available for this transformation.";
+  }
+
+  const lines = [
+    "**Mental Effects:**",
+    ...MENTAL_EFFECT_CONTENT_LEVELS.map((level) =>
+      formatEffectLevel(getMentalEffectLevelLabel(level), mentalEffects[level])
+    ),
+  ].filter(Boolean);
+
+  if (lines.length === 1) {
+    lines.push("No mental effects are available for this transformation.");
+  }
+
+  return lines.join("\n");
 }
 
 function buildTransformationListLine(transformation) {
-  const hostedImageUrl = getHostedTransformationImageUrl(transformation);
-  const imageText = hostedImageUrl
-    ? ` - [full picture](${hostedImageUrl})`
-    : "";
-
-  return `- **${transformation.name}** (\`${transformation.id}\`)${imageText}`;
+  return `• ${transformation.name} | ID: \`${transformation.id}\` | Categories: ${formatCategories(
+    transformation.categories
+  )}`;
 }
 
-function splitListMessages(lines) {
+function buildBasicDetailsMessage(transformation) {
+  return [
+    `**${transformation.name}**`,
+    "",
+    `**ID:** \`${transformation.id}\``,
+    `**Categories:** ${formatCategories(transformation.categories)}`,
+    "",
+    "**Description:**",
+    transformation.text || "No description is available for this transformation.",
+  ].join("\n");
+}
+
+function buildFullDetailsMessage(transformation) {
+  const physicalEffects =
+    transformation.transformationNotes?.physicalEffects;
+
+  const mentalEffects =
+    transformation.transformationNotes?.mentalEffects;
+
+  return [
+    `**${transformation.name}**`,
+    "",
+    `**ID:** \`${transformation.id}\``,
+    `**Categories:** ${formatCategories(transformation.categories)}`,
+    "",
+    "**Description:**",
+    transformation.text || "No description is available for this transformation.",
+    "",
+    formatPhysicalEffectsBlock(physicalEffects),
+    "",
+    formatMentalEffectsBlock(mentalEffects),
+  ].join("\n");
+}
+
+function splitMessages(lines) {
   const messages = [];
   let currentMessage = "";
 
@@ -69,128 +149,138 @@ function splitListMessages(lines) {
   return messages;
 }
 
+function splitTextIntoMessages(text) {
+  return splitMessages(text.split("\n"));
+}
+
 function buildTransformationListMessages(transformations) {
   const sortedTransformations = [...transformations].sort((left, right) =>
     left.name.localeCompare(right.name)
   );
-  const hasHostedImageLinks = sortedTransformations.some((transformation) =>
-    getHostedTransformationImageUrl(transformation)
-  );
-  const headerLines = [
-    `**Transformations in the system (${sortedTransformations.length})**`,
+
+  const lines = [
+    `Transformations loaded: ${sortedTransformations.length}`,
     "",
-    "Use `/listtransformations id:<transformation_id>` to view one picture on its own.",
+    ...sortedTransformations.map(buildTransformationListLine),
   ];
 
-  if (!hasHostedImageLinks) {
-    headerLines.push(
-      "Picture links are only shown here when hosted image URLs are configured. ID lookup can still show local images."
-    );
-  }
-
-  headerLines.push("");
-
-  return splitListMessages([
-    ...headerLines,
-    ...sortedTransformations.map(buildTransformationListLine),
-  ]);
+  return splitMessages(lines);
 }
 
-function buildTransformationLookupResponse(transformation) {
-  const hostedImageUrl = getHostedTransformationImageUrl(transformation);
-  const localImagePath = getLocalTransformationImagePath(transformation);
-  const embed = new EmbedBuilder()
-    .setTitle(transformation.name)
-    .addFields({
-      name: "Transformation ID",
-      value: `\`${transformation.id}\``,
-      inline: false,
-    })
-    .setFooter({
-      text: "BiiBiiBoo TF Bot",
-    })
-    .setTimestamp();
-  const files = [];
+async function sendMessagesByDm(user, messages, extraOptions = {}) {
+  const [firstMessage, ...remainingMessages] = messages;
 
-  if (hostedImageUrl) {
-    embed.setImage(hostedImageUrl);
-    embed.addFields({
-      name: "Artwork",
-      value: `[View full picture](${hostedImageUrl})`,
-      inline: false,
-    });
-  } else if (localImagePath) {
-    const imageFileName = `${transformation.id}.png`;
+  await user.send({
+    content: firstMessage,
+    ...extraOptions,
+  });
 
-    files.push(
-      new AttachmentBuilder(localImagePath, {
-        name: imageFileName,
-      })
-    );
-    embed.setImage(`attachment://${imageFileName}`);
-  } else {
-    embed.addFields({
-      name: "Artwork",
-      value: "No image is available for this transformation yet.",
-      inline: false,
+  for (const message of remainingMessages) {
+    await user.send({
+      content: message,
     });
   }
-
-  return {
-    embeds: [embed],
-    files,
-    flags: MessageFlags.Ephemeral,
-  };
 }
 
 async function handleListTransformations(interaction) {
   const transformations = loadTransformations();
   const requestedId = interaction.options.getString("id");
+  const mode = interaction.options.getString("mode") || "basic";
+
+  await interaction.deferReply({
+    flags: MessageFlags.Ephemeral,
+  });
 
   if (transformations.length === 0) {
-    await interaction.reply({
+    await interaction.editReply({
       content: "There are no transformations loaded yet.",
-      flags: MessageFlags.Ephemeral,
+    });
+    return;
+  }
+
+  if (mode === "full" && !requestedId) {
+    await interaction.editReply({
+      content:
+        "Please provide a transformation ID when using full mode. Example: `/listtransformations id:living_plush_bunny mode:full`",
     });
     return;
   }
 
   if (requestedId) {
-    const transformation = findTransformationById(
-      transformations,
-      requestedId
-    );
+    const transformation = findTransformationById(transformations, requestedId);
 
     if (!transformation) {
-      await interaction.reply({
-        content: `I could not find a transformation with the id \`${requestedId}\`. Use \`/listtransformations\` to see the current IDs.`,
-        flags: MessageFlags.Ephemeral,
+      await interaction.editReply({
+        content: `I could not find a transformation with the ID \`${requestedId}\`. Use \`/listtransformations\` to get the current list.`,
       });
       return;
     }
 
-    await interaction.reply(buildTransformationLookupResponse(transformation));
+    if (mode === "full") {
+      const imagePath = getLocalTransformationImagePath(transformation);
+      const messages = splitTextIntoMessages(
+        buildFullDetailsMessage(transformation)
+      );
+
+      const files = imagePath
+        ? [
+            new AttachmentBuilder(imagePath, {
+              name: `${transformation.id}.png`,
+            }),
+          ]
+        : [];
+
+        try {
+          await sendMessagesByDm(interaction.user, messages);
+
+          if (files.length > 0) {
+            await interaction.user.send({
+              files,
+            });
+          }
+
+          await interaction.editReply({
+            content: `I have sent you the full details for \`${transformation.id}\` by DM.`,
+          });
+        } catch (error) {
+        console.error("Could not send full transformation details DM:", error);
+
+        await interaction.editReply({
+          content:
+            "I could not send you a DM. Please check your Discord privacy settings and try again.",
+        });
+      }
+
+      return;
+    }
+
+    await interaction.editReply({
+      content: buildBasicDetailsMessage(transformation),
+    });
     return;
   }
 
   const messages = buildTransformationListMessages(transformations);
-  const [firstMessage, ...remainingMessages] = messages;
 
-  await interaction.reply({
-    content: firstMessage,
-    flags: MessageFlags.Ephemeral,
-  });
+  try {
+    await sendMessagesByDm(interaction.user, messages);
 
-  for (const message of remainingMessages) {
-    await interaction.followUp({
-      content: message,
-      flags: MessageFlags.Ephemeral,
+    await interaction.editReply({
+      content: "I have sent you the transformation list by DM.",
+    });
+  } catch (error) {
+    console.error("Could not send transformation list DM:", error);
+
+    await interaction.editReply({
+      content:
+        "I could not send you a DM. Please check your Discord privacy settings and try again.",
     });
   }
 }
 
 module.exports = {
   buildTransformationListMessages,
-  buildTransformationLookupResponse,
+  buildBasicDetailsMessage,
+  buildFullDetailsMessage,
   handleListTransformations,
 };

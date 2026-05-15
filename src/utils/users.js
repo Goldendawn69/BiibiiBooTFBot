@@ -1,14 +1,23 @@
 const fs = require("fs");
 const path = require("path");
+
 const {
   DEFAULT_MENTAL_EFFECT_LEVEL,
   normalizeMentalEffectRange,
   normalizeMentalEffectLevel,
   pickRandomMentalEffectLevel,
 } = require("./mentalEffects");
+
 const {
   VALID_TRANSFORMATION_CATEGORY_VALUES,
 } = require("./transformationCategories");
+
+const PHYSICAL_DETAIL_LEVELS = {
+  PG: "pg",
+  ADULT: "adult",
+};
+
+const VALID_PHYSICAL_DETAIL_LEVELS = Object.values(PHYSICAL_DETAIL_LEVELS);
 
 const usersFilePath = path.join(__dirname, "..", "..", "data", "users.json");
 const usersDirectoryPath = path.dirname(usersFilePath);
@@ -159,17 +168,44 @@ function pickUserMentalEffectsLevel(user) {
   return pickRandomMentalEffectLevel(range.minLevel, range.maxLevel);
 }
 
+function getUserPhysicalDetailLevel(user) {
+  const detailLevel = user?.physicalDetailLevel;
+
+  if (VALID_PHYSICAL_DETAIL_LEVELS.includes(detailLevel)) {
+    return detailLevel;
+  }
+
+  return PHYSICAL_DETAIL_LEVELS.PG;
+}
+
+function setUserPhysicalDetailLevel(user, physicalDetailLevel) {
+  if (!VALID_PHYSICAL_DETAIL_LEVELS.includes(physicalDetailLevel)) {
+    user.physicalDetailLevel = PHYSICAL_DETAIL_LEVELS.PG;
+    return user.physicalDetailLevel;
+  }
+
+  user.physicalDetailLevel = physicalDetailLevel;
+  return user.physicalDetailLevel;
+}
+
 module.exports = {
+  PHYSICAL_DETAIL_LEVELS,
+  VALID_PHYSICAL_DETAIL_LEVELS,
+
   getUserBlockedTransformationCategories,
   getUserMentalEffectsLevel,
   getUserMentalEffectsRange,
+  getUserPhysicalDetailLevel,
+
   loadUsers,
   normalizeBlockedTransformationCategories,
   pickUserMentalEffectsLevel,
   saveUsers,
+
   setUserBlockedTransformationCategories,
   setUserMentalEffectsLevel,
   setUserMentalEffectsMaxLevel,
   setUserMentalEffectsMinLevel,
   setUserMentalEffectsRange,
+  setUserPhysicalDetailLevel,
 };

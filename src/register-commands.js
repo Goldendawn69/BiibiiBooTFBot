@@ -39,12 +39,22 @@ const commands = [
 
   new SlashCommandBuilder()
     .setName("listtransformations")
-    .setDescription("List loaded transformations or view one transformation picture.")
+    .setDescription("List transformations, or show details for one transformation.")
     .addStringOption((option) =>
       option
         .setName("id")
-        .setDescription("Optional transformation id to view on its own.")
+        .setDescription("Optional transformation ID to show details for.")
         .setRequired(false)
+    )
+    .addStringOption((option) =>
+      option
+        .setName("mode")
+        .setDescription("How much detail to show.")
+        .setRequired(false)
+        .addChoices(
+          { name: "Basic", value: "basic" },
+          { name: "Full", value: "full" }
+        )
     )
     .toJSON(),
 

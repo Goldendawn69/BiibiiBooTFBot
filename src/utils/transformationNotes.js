@@ -1,9 +1,16 @@
 const { EmbedBuilder } = require("discord.js");
+
 const {
   DEFAULT_MENTAL_EFFECT_LEVEL,
   getMentalEffectLevelLabel,
   resolveMentalEffectText,
 } = require("./mentalEffects");
+
+const {
+  buildPhysicalTransitionText,
+} = require("./physicalTransitions");
+
+const DEFAULT_PHYSICAL_DETAIL_LEVEL = "pg";
 
 function hasTransformationNotes(
   transformation,
@@ -15,18 +22,14 @@ function hasTransformationNotes(
     mentalEffectLevel
   );
 
-  return Boolean(
-    notes &&
-      (
-        notes.physicalEffects ||
-        mentalEffectText
-      )
-  );
+  return Boolean(notes && (notes.physicalEffects || mentalEffectText));
 }
 
 function buildTransformationNoteEmbed(
   transformation,
-  mentalEffectLevel = DEFAULT_MENTAL_EFFECT_LEVEL
+  mentalEffectLevel = DEFAULT_MENTAL_EFFECT_LEVEL,
+  previousTransformation = null,
+  physicalDetailLevel = DEFAULT_PHYSICAL_DETAIL_LEVEL
 ) {
   const notes = transformation.transformationNotes;
   const mentalEffectText = resolveMentalEffectText(
@@ -35,11 +38,22 @@ function buildTransformationNoteEmbed(
   );
   const mentalEffectLevelLabel = getMentalEffectLevelLabel(mentalEffectLevel);
 
+  const physicalTransitionText = buildPhysicalTransitionText(
+    previousTransformation,
+    transformation,
+    physicalDetailLevel
+  );
+
   const embed = new EmbedBuilder()
     .setTitle("✨ Private Transformation Note")
     .addFields({
       name: "Form",
       value: transformation.name,
+      inline: false,
+    })
+    .addFields({
+      name: "Physical Transformation",
+      value: physicalTransitionText,
       inline: false,
     })
     .setFooter({
@@ -49,7 +63,7 @@ function buildTransformationNoteEmbed(
 
   if (notes?.physicalEffects) {
     embed.addFields({
-      name: "Physical Effects",
+      name: "Final Physical Form",
       value: notes.physicalEffects,
       inline: false,
     });
@@ -69,7 +83,9 @@ function buildTransformationNoteEmbed(
 async function sendTransformationNote(
   discordUser,
   transformation,
-  mentalEffectLevel = DEFAULT_MENTAL_EFFECT_LEVEL
+  mentalEffectLevel = DEFAULT_MENTAL_EFFECT_LEVEL,
+  previousTransformation = null,
+  physicalDetailLevel = DEFAULT_PHYSICAL_DETAIL_LEVEL
 ) {
   if (!hasTransformationNotes(transformation, mentalEffectLevel)) {
     return {
@@ -81,7 +97,9 @@ async function sendTransformationNote(
   try {
     const embed = buildTransformationNoteEmbed(
       transformation,
-      mentalEffectLevel
+      mentalEffectLevel,
+      previousTransformation,
+      physicalDetailLevel
     );
 
     await discordUser.send({

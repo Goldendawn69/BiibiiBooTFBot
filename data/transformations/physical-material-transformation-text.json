@@ -1,0 +1,146 @@
+{
+  "departure": {
+    "living_flesh": [
+      "your living skin, muscle, and natural warmth begin to shift",
+      "your warm living body starts to rework itself beneath the surface",
+      "your natural flesh softens, tightens, and begins changing into something new"
+    ],
+    "metal": [
+      "your metal plating, precise joints, and mechanical rigidity begin to break apart",
+      "your hard metal body starts to unlock, plates shifting and seams opening",
+      "your mechanical frame shudders as its rigid plating begins to lose its shape"
+    ],
+    "porcelain": [
+      "your glossy porcelain surface loses its hard, delicate stillness",
+      "your ceramic body begins to loosen, its polished surface no longer holding firm",
+      "your porcelain shell trembles as its painted stillness starts to give way"
+    ],
+    "plastic": [
+      "your smooth plastic surface starts to loosen from its fixed, artificial shape",
+      "your rigid plastic body begins to flex and distort away from its display-perfect form",
+      "your polished artificial surface softens from its fixed plastic shape"
+    ],
+    "plush_fabric": [
+      "your plush fabric, soft stuffing, and stitched seams begin to pull into a new shape",
+      "your stuffed body compresses and shifts, seams tugging as the fabric starts to change",
+      "your soft plush surface bunches and reforms as the stuffing inside rearranges"
+    ],
+    "rubber": [
+      "your glossy rubber body stretches and deforms away from its toy-like shape",
+      "your flexible rubber surface pulls and bends as your toy-like body starts to change",
+      "your squeaky rubber form warps, stretching away from its old rounded shape"
+    ],
+    "slime": [
+      "your colourful slime body ripples, stretches, and gathers itself into a new outline",
+      "your gooey form wobbles and pulls inward, its glossy colours shifting as it reshapes",
+      "your soft slime surface flows over itself, losing its old outline as the change begins"
+    ],
+    "water": [
+      "your liquid body swirls and draws together, its rippling surface changing course",
+      "your watery form gathers into new currents, flowing away from its old shape",
+      "your clear liquid body ripples and folds as its outline starts to reform"
+    ],
+    "ghostly_mist": [
+      "your misty, translucent body gathers inward, its drifting edges condensing into a solid outline",
+      "your ghostly form pulls together, pale vapour thickening as the old shape fades",
+      "your translucent edges stop drifting freely and begin drawing into a new form"
+    ],
+    "plant_matter": [
+      "your leaves, vines, blossoms, and living plant matter begin to rearrange",
+      "your leafy body rustles and shifts as vines and petals pull into a new pattern",
+      "your plant-like form creaks softly as stems, leaves, and blossoms start to change"
+    ],
+    "stone": [
+      "your stone-like body grinds and smooths as its sculpted surface begins to change",
+      "your carved surface cracks into motion, stone dust shimmering as your body reforms",
+      "your heavy stone body starts to shift, its rigid surface smoothing into a new shape"
+    ],
+    "honey": [
+      "your glossy honeyed body thickens, flows, and pulls into a new shape",
+      "your amber body stretches in slow syrupy ribbons as it starts to reform",
+      "your sticky golden surface ripples and gathers, dragging itself into a new outline"
+    ],
+    "candy_floss": [
+      "your fluffy candyfloss body compresses, its sugary softness twisting into a new form",
+      "your airy sugar-spun body collapses into denser swirls as the change begins",
+      "your pastel fluff twists and tightens, sugary strands pulling into a fresh shape"
+    ],
+    "synthetic_skin": [
+      "your artificial skin, hidden mechanisms, and perfectly controlled body begin to shift",
+      "your synthetic surface tightens as hidden systems rearrange beneath it",
+      "your smooth artificial body recalibrates, its hidden structure changing under the surface"
+    ]
+  },
+  "arrival": {
+    "living_flesh": [
+      "warming and softening into living skin, flexible limbs, natural hair, and expressive movement",
+      "becoming warm living flesh again, with soft skin, natural motion, and expressive features",
+      "settling into organic skin, flexible joints, natural warmth, and lifelike movement"
+    ],
+    "metal": [
+      "forming polished metal plating, precise joints, mechanical seams, and a faint artificial hum",
+      "locking into smooth metal panels, neat mechanical joints, and softly humming machinery",
+      "becoming polished metal and clockwork precision, with seams, plates, and mechanical motion"
+    ],
+    "porcelain": [
+      "settling into glossy porcelain, painted features, delicate surfaces, and doll-like stillness",
+      "becoming cool polished porcelain, with painted detail, fragile surfaces, and careful stillness",
+      "smoothing into ceramic perfection, glossy and delicate, with painted features and posed grace"
+    ],
+    "plastic": [
+      "settling into smooth rigid plastic, polished artificial features, and display-perfect stillness",
+      "becoming sleek polished plastic, firm and artificial, with a display-ready finish",
+      "hardening into smooth plastic curves, fixed poise, and a flawless mannequin-like surface"
+    ],
+    "plush_fabric": [
+      "softening into plush fabric, padded paws or limbs, stitched seams, and squeezable stuffing",
+      "becoming soft fabric and stuffing, with stitched details and a cuddly toy-like body",
+      "rounding into plush softness, padded limbs, fuzzy texture, and huggable stuffed shape"
+    ],
+    "rubber": [
+      "becoming glossy rubber, rounded toy-like surfaces, flexible curves, and squeaky movement",
+      "turning bright and rubbery, with smooth toy-like curves and a soft squeak in every movement",
+      "settling into flexible rubber, shiny surfaces, rounded edges, and bath-toy wobble"
+    ],
+    "slime": [
+      "melting into colourful translucent slime, stretchy limbs, glossy drips, and wobbly motion",
+      "becoming soft glossy slime, with rippling colours, stretchy movement, and jelly-like wobble",
+      "flowing into translucent goo, bright and squishy, with drips, ripples, and elastic motion"
+    ],
+    "water": [
+      "flowing into clear living water, rippling skin, liquid movement, and drifting droplets",
+      "becoming fluid and translucent, with watery skin, smooth currents, and droplets trailing behind",
+      "settling into living water, your outline rippling with every movement and splash of light"
+    ],
+    "ghostly_mist": [
+      "fading into pale ghostly mist, translucent edges, weightless movement, and a soft spectral glow",
+      "becoming light and spectral, with misty edges, transparent skin, and a quiet ghostly shimmer",
+      "dissolving into soft supernatural vapour, leaving a translucent body that drifts more than walks"
+    ],
+    "plant_matter": [
+      "blooming into living plant matter, leafy details, curling vines, blossoms, and earthy texture",
+      "becoming green and living, with vines, leaves, flowers, and soft woodland texture spreading through you",
+      "settling into plant-like life, with petals, curling stems, leafy growth, and a fresh earthy scent"
+    ],
+    "stone": [
+      "solidifying into sculpted stone, smooth carved surfaces, heavy stillness, and statue-like poise",
+      "becoming cool carved stone, heavy and polished, with statue-like grace and stillness",
+      "settling into sculpted solidity, smooth mineral surfaces, and the poised weight of a living statue"
+    ],
+    "honey": [
+      "turning glossy and golden, with syrupy movement, amber shine, and thick honeyed texture",
+      "becoming warm amber sweetness, thick and glossy, with slow honeyed motion",
+      "settling into golden syrupy shine, sticky smoothness, and slow nectar-like movement"
+    ],
+    "candy_floss": [
+      "puffing into soft candyfloss texture, sugary colours, fluffy volume, and drifting sweet sparkles",
+      "becoming airy spun sugar, soft and pastel, with fluffy volume and sugary shimmer",
+      "settling into cloudlike candyfloss, light and sweet, with pastel strands and sparkling sugar dust"
+    ],
+    "synthetic_skin": [
+      "settling into smooth synthetic skin, hidden robotic structure, precise movement, and an artificial humanoid finish",
+      "becoming sleek synthetic skin over hidden machinery, with flawless surfaces and controlled movement",
+      "settling into an artificial humanoid body, smooth outside and mechanical beneath, with precise graceful motion"
+    ]
+  }
+}

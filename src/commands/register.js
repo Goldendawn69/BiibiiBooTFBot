@@ -21,6 +21,14 @@ async function handleRegister(interaction) {
 
   users[userId] = {
     registered: true,
+
+    discordUser: {
+      id: interaction.user.id,
+      username: interaction.user.username,
+      globalName: interaction.user.globalName || null,
+      displayName: interaction.member?.displayName || null,
+    },
+
     currentForm: null,
     currentTransformationId: null,
     transformationNotesEnabled: false,
@@ -28,6 +36,7 @@ async function handleRegister(interaction) {
     mentalEffectsMinLevel: defaultMentalEffectsRange.minLevel,
     mentalEffectsMaxLevel: defaultMentalEffectsRange.maxLevel,
     registeredAt: new Date().toISOString(),
+    physicalDetailLevel: "pg",
   };
 
   saveUsers(users);

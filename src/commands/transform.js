@@ -1,14 +1,18 @@
 const { MessageFlags } = require("discord.js");
+
 const {
+  getUserPhysicalDetailLevel,
   loadUsers,
   pickUserMentalEffectsLevel,
   saveUsers,
 } = require("../utils/users");
+
 const {
   getAllowedTransformationsForUser,
   loadTransformations,
   pickRandomItem,
 } = require("../utils/transformations");
+
 const { buildTransformationEmbed } = require("../utils/embeds");
 const { sendTransformationNote } = require("../utils/transformationNotes");
 
@@ -55,6 +59,12 @@ function applyRandomTransformation(users, userId, category) {
     };
   }
 
+  const previousTransformation = user.currentTransformationId
+    ? transformations.find(
+        (item) => item.id === user.currentTransformationId
+      )
+    : null;
+
   const transformation = pickRandomItem(matchingTransformations);
 
   users[userId].currentForm = transformation.name;
@@ -64,10 +74,16 @@ function applyRandomTransformation(users, userId, category) {
   return {
     ok: true,
     transformation,
+    previousTransformation,
   };
 }
 
-async function sendTransformationNoteIfEnabled(discordUser, userRecord, transformation) {
+async function sendTransformationNoteIfEnabled(
+  discordUser,
+  userRecord,
+  transformation,
+  previousTransformation
+) {
   if (!userRecord?.transformationNotesEnabled) {
     return {
       attempted: false,
@@ -78,7 +94,9 @@ async function sendTransformationNoteIfEnabled(discordUser, userRecord, transfor
   return sendTransformationNote(
     discordUser,
     transformation,
-    pickUserMentalEffectsLevel(userRecord)
+    pickUserMentalEffectsLevel(userRecord),
+    previousTransformation,
+    getUserPhysicalDetailLevel(userRecord)
   );
 }
 
@@ -123,7 +141,8 @@ async function handleTransformMe(interaction) {
   const noteResult = await sendTransformationNoteIfEnabled(
     interaction.user,
     users[userId],
-    result.transformation
+    result.transformation,
+    result.previousTransformation
   );
 
   if (noteResult.attempted && !noteResult.sent) {
@@ -176,7 +195,8 @@ async function handleTransformUser(interaction) {
   const noteResult = await sendTransformationNoteIfEnabled(
     target,
     users[target.id],
-    result.transformation
+    result.transformation,
+    result.previousTransformation
   );
 
   if (noteResult.attempted && !noteResult.sent) {

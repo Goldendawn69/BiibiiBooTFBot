@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node src/index.js",
     "register": "node src/register-commands.js",
-    "validate-data": "node scripts/validate-data.js"
+    "check:transitions": "npm run validate:data && npm run preview:transitions",
+    "check:transitions-adult": "npm run validate:data && npm run preview:transitions -- adult",
+    "validate:data": "node scripts/validate-transformation-data.js",
+    "preview:transitions": "node scripts/preview-physical-transitions.js"
   },
   "repository": {
     "type": "git",
