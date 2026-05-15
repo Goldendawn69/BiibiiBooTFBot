@@ -22,6 +22,10 @@ const physicalMaterialTransformationTextPath = path.join(
   "physical-material-transformation-text.json"
 );
 
+const {
+  buildChestTransitionText,
+} = require("./physicalChestTransitions");
+
 const physicalAnatomyTransitionTextPath = path.join(
   __dirname,
   "..",
@@ -155,7 +159,7 @@ function getMaterialTransitionText(fromTransformation, transformation) {
 }
 
 function buildInitialMasculineToFeminineText(transformation) {
-  return `Your original body begins reshaping into a feminine version of the ${transformation.name} form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, surface details, and movement all shift to suit the transformation.`;
+  return `Your original body begins reshaping into the ${transformation.name} form. Your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, and movements all change to suit the new body.`;
 }
 
 function buildInitialMasculineToObjectText(transformation) {
@@ -226,6 +230,11 @@ function buildPhysicalTransitionText(
     transformation
   );
 
+  const chestTransitionText = buildChestTransitionText(
+    fromTransformation,
+    transformation
+  );
+
   const anatomyTransitionText = getAnatomyTransitionText(
     fromTransformation,
     transformation,
@@ -241,6 +250,10 @@ function buildPhysicalTransitionText(
 
   if (shapeTransitionText) {
     transitionParts.push(shapeTransitionText);
+  }
+
+  if (chestTransitionText) {
+    transitionParts.push(chestTransitionText);
   }
 
   if (anatomyTransitionText) {

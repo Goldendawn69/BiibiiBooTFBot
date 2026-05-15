@@ -1,0 +1,77 @@
+{
+  "masculine_humanoid_to_feminine_humanoid": [
+    "Your original body begins reshaping into a feminine version of the {toName} form. Your chest fills out, your waist draws in, your hips round, and your face softens. Your hair, posture, clothing, and movements all change to suit the new body.",
+    "Your body shifts towards the {toName} form, taking on a feminine shape as your chest, waist, hips, face, hair, clothing, and posture change together.",
+    "Your frame softens and reshapes into the {toName} form, gaining a feminine silhouette while your face, stance, outfit, and movements adjust around it."
+  ],
+  "masculine_humanoid_to_feminine_creature": [
+    "Your original body begins reshaping into a feminine creature version of the {toName} form. Your chest fills out, your waist draws in, your hips round, and your face softens as less-human traits begin to emerge.",
+    "Your body shifts into the {toName} form, gaining a feminine shape while creature-like features, posture, clothing, and movement begin to take over.",
+    "Your frame softens into a feminine silhouette as the {toName} form pulls you away from ordinary humanity and into something stranger."
+  ],
+  "masculine_humanoid_to_small_feminine_humanoid": [
+    "Your original body shrinks and reshapes into a smaller feminine version of the {toName} form. Your proportions become lighter, neater, and more delicate as the new body settles in.",
+    "Your frame draws inward, becoming smaller and more feminine as the {toName} form changes your face, posture, clothing, and movements.",
+    "Your body compresses into a petite feminine shape, adjusting your proportions and stance to match the {toName} form."
+  ],
+  "masculine_humanoid_to_non_humanoid_object": [
+    "Your original body begins losing its human shape as the {toName} transformation takes over. Your proportions compress and simplify, leaving ordinary limbs, posture, and movement behind.",
+    "Your body pulls inward and stops following a human outline, reshaping into the simpler object-like form of {toName}.",
+    "Your human frame collapses into a non-humanoid shape, your limbs and posture giving way as the {toName} form takes over."
+  ],
+  "masculine_humanoid_to_animal_object": [
+    "Your original body begins losing its human shape as the {toName} transformation takes over. Your proportions shrink, round, and simplify into a toy-like animal object form.",
+    "Your body pulls into a smaller animal-shaped object, losing human posture and movement as the {toName} form settles in.",
+    "Your human outline compresses into a toy-like animal shape, your limbs and stance simplifying into the {toName} form."
+  ],
+  "feminine_humanoid_to_feminine_humanoid": [
+    "Your {fromName} form reshapes into the {toName} form, its face, hair, outfit, posture, and movements changing while the feminine body shape remains.",
+    "Your current feminine body shifts into the {toName} form, altering its features, stance, clothing, and manner of movement.",
+    "Your {fromName} shape is rewritten into the {toName} form, keeping a feminine frame while everything else changes around it."
+  ],
+  "feminine_humanoid_to_feminine_creature": [
+    "Your {fromName} form reshapes into the {toName} form, keeping a feminine frame while creature-like traits begin to overtake your body.",
+    "Your body moves from ordinary feminine humanoid into the stranger shape of {toName}, changing your posture, features, and movement.",
+    "Your feminine silhouette remains, but the {toName} form adds less-human details that alter how your body looks and moves."
+  ],
+  "feminine_creature_to_feminine_humanoid": [
+    "Your {fromName} form reshapes into the {toName} form, drawing your stranger features back into a more humanoid feminine body.",
+    "Your creature-like details recede as the {toName} form gives you a more human feminine shape again.",
+    "Your body pulls away from its creature shape and settles into the feminine humanoid form of {toName}."
+  ],
+  "feminine_creature_to_feminine_creature": [
+    "Your {fromName} form reshapes into the {toName} form, changing one feminine creature body into another.",
+    "Your creature-like body reorganises into the {toName} form, altering its features, posture, and movement.",
+    "Your current creature shape shifts into a new feminine creature form, trading its old traits for those of {toName}."
+  ],
+  "small_feminine_humanoid_to_small_feminine_humanoid": [
+    "Your small feminine form reshapes from {fromName} into {toName}, changing its features, outfit, stance, and movements.",
+    "Your petite body adjusts into the {toName} form, keeping its smaller scale while the details change.",
+    "Your {fromName} form stays small but changes completely in style, posture, and presence as {toName} takes over."
+  ],
+  "small_feminine_humanoid_to_feminine_creature": [
+    "Your small feminine body reshapes into the {toName} form, gaining creature-like traits as its proportions and movements change.",
+    "Your petite frame shifts into a feminine creature body, letting the {toName} form rewrite your features and stance.",
+    "Your smaller body stretches and alters into the stranger feminine creature shape of {toName}."
+  ],
+  "non_humanoid_object_to_feminine_humanoid": [
+    "Your {fromName} form loosens and unfolds, rigid or simplified parts becoming a softer, flexible feminine body as {toName} takes over.",
+    "Your object-like shape opens back into a humanoid outline, forming limbs, posture, and expressive movement for the {toName} form.",
+    "Your {fromName} shape stops being an object and rebuilds itself into the feminine humanoid body of {toName}."
+  ],
+  "animal_object_to_feminine_humanoid": [
+    "Your {fromName} form stretches and unfolds, toy-like simplicity giving way to the flexible feminine humanoid body of {toName}.",
+    "Your animal-object shape pulls upward into a humanlike form, gaining limbs, posture, and movement as {toName} takes over.",
+    "Your toy-like body reorganises into the feminine humanoid shape of {toName}."
+  ],
+  "feminine_humanoid_to_non_humanoid_object": [
+    "Your {fromName} form compresses and simplifies, living curves and flexible movement giving way to the object-like shape of {toName}.",
+    "Your feminine body loses its humanoid outline, drawing inward until the {toName} form replaces ordinary posture and movement.",
+    "Your limbs, stance, and flexible body shape collapse into the simpler object form of {toName}."
+  ],
+  "feminine_humanoid_to_animal_object": [
+    "Your {fromName} form compresses and simplifies, feminine curves and human movement giving way to the toy-like animal shape of {toName}.",
+    "Your humanoid body shrinks into an animal-shaped object, losing ordinary posture as the {toName} form takes over.",
+    "Your feminine form rounds and simplifies into the smaller toy-like body of {toName}."
+  ]
+}

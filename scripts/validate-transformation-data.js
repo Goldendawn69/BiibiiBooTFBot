@@ -10,6 +10,14 @@ const {
   VALID_PHYSICAL_SEX_FORMS,
 } = require("../src/utils/physicalProfiles");
 
+const VALID_PHYSICAL_CHEST_VALUES = [
+  "flat",
+  "small_breasts",
+  "medium_breasts",
+  "large_breasts",
+  "object_none",
+];
+
 const transformationDetailsPath = path.join(
   __dirname,
   "..",
@@ -145,6 +153,12 @@ function validateTransformationDetails(transformations, errors, warnings) {
       warnings.push(`${label} is missing sexForm.`);
     } else if (!VALID_PHYSICAL_SEX_FORMS.includes(profile.sexForm)) {
       errors.push(`${label} has invalid sexForm: ${profile.sexForm}`);
+    }
+
+    if (!profile.chest) {
+      warnings.push(`${label} is missing chest.`);
+    } else if (!VALID_PHYSICAL_CHEST_VALUES.includes(profile.chest)) {
+      errors.push(`${label} has invalid chest: ${profile.chest}`);
     }
   });
 }

@@ -1,0 +1,42 @@
+{
+  "growth_from_flat": [
+    "Your {fromChest} begins to itch, two tender lumps pressing outward until they grow into {toBreastSize} breasts.",
+    "A tight pressure builds across your {fromChest}, swelling forward until {toBreastSize} feminine curves settle into place.",
+    "Your {fromChest} prickles and rounds out, the change pushing steadily forward until {toBreastSize} breasts form.",
+    "A warm ache spreads across your {fromChest} as it begins to rise, soft curves pushing outward until {toBreastSize} breasts take shape.",
+    "Your {fromChest} tightens, then swells forward in slow pulses, growing into {toBreastSize} breasts as the new form settles.",
+    "The flatness of your chest gives way as new weight gathers there, rounding outward into {toBreastSize} feminine curves."
+  ],
+  "resize": [
+    "Your chest shifts again, your {fromBreastSize} breasts changing until they settle into {toBreastSize} curves.",
+    "A pressure rolls through your chest as your breasts reshape from {fromBreastSize} to {toBreastSize}.",
+    "Your breasts adjust under the transformation, changing from {fromBreastSize} to {toBreastSize} as the new form settles.",
+    "Your chest tingles as its curves alter, your {fromBreastSize} breasts reshaping into a {toBreastSize} size.",
+    "The weight and balance of your chest changes, your {fromBreastSize} breasts shifting until they become {toBreastSize}.",
+    "Your breasts swell, ease, or draw in as needed, changing from {fromBreastSize} to {toBreastSize} to match the new body."
+  ],
+  "to_flat": [
+    "Your {fromBreastSize} breasts soften and recede until your chest becomes flat again.",
+    "The curves of your chest draw inward, leaving a flat chest behind.",
+    "Your breasts shrink away steadily, smoothing back into a flat chest.",
+    "Your chest loses its soft weight as your {fromBreastSize} breasts pull inward and fade back to flatness.",
+    "The shape of your breasts diminishes, the curves sinking away until your chest is flat once more.",
+    "Your {fromBreastSize} breasts tighten, shrink, and vanish into a flatter chest."
+  ],
+  "to_object_none": [
+    "Your chest loses its human shape entirely as your body becomes something with no torso or breasts at all.",
+    "The shape of your chest collapses into the new non-human form, leaving no breasts behind.",
+    "Your torso simplifies out of human shape, erasing your chest as the object form takes over.",
+    "Your breasts and torso pull into the new outline, disappearing as your body stops being shaped like a person.",
+    "The front of your body loses its human curves, flattening and folding into the non-humanoid form.",
+    "Your chest is swallowed by the larger change, its curves vanishing as your body becomes object-like."
+  ],
+  "from_object_none": [
+    "A new chest forms as your body becomes humanoid again, swelling into {toBreastSize} breasts.",
+    "Your non-human shape unfolds into a torso, with {toBreastSize} breasts forming as the body becomes feminine.",
+    "A feminine chest pushes into place as your body rebuilds itself, settling into {toBreastSize} breasts.",
+    "As your torso returns, soft curves rise from the new body and settle into {toBreastSize} breasts.",
+    "Your object-like shape stretches into a humanoid torso, new breast curves forming at {toBreastSize} size.",
+    "The new body gains a front, a torso, and then {toBreastSize} breasts as it becomes feminine again."
+  ]
+}

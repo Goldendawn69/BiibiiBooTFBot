@@ -10,7 +10,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "metal",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "object_none"
     }
   },
   {
@@ -24,7 +25,8 @@
     "physicalProfile": {
       "bodyShape": "non_humanoid_object",
       "bodyMaterial": "porcelain",
-      "sexForm": "none"
+      "sexForm": "none",
+      "chest": "object_none"
     }
   },
   {
@@ -37,7 +39,8 @@
     "physicalProfile": {
       "bodyShape": "small_feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "small_breasts"
     }
   },
   {
@@ -51,7 +54,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "plastic",
-      "sexForm": "smooth_neutral"
+      "sexForm": "smooth_neutral",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -66,7 +70,8 @@
     "physicalProfile": {
       "bodyShape": "animal_object",
       "bodyMaterial": "rubber",
-      "sexForm": "none"
+      "sexForm": "none",
+      "chest": "object_none"
     }
   },
   {
@@ -79,7 +84,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -92,7 +98,8 @@
     "physicalProfile": {
       "bodyShape": "small_feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "small_breasts"
     }
   },
   {
@@ -106,7 +113,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "porcelain",
-      "sexForm": "smooth_neutral"
+      "sexForm": "smooth_neutral",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -119,7 +127,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -132,7 +141,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -146,7 +156,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "plush_fabric",
-      "sexForm": "smooth_neutral"
+      "sexForm": "smooth_neutral",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -159,7 +170,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -172,7 +184,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "large_breasts"
     }
   },
   {
@@ -185,7 +198,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "metal",
-      "sexForm": "smooth_neutral"
+      "sexForm": "smooth_neutral",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -199,7 +213,8 @@
     "physicalProfile": {
       "bodyShape": "small_feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "small_breasts"
     }
   },
   {
@@ -212,7 +227,8 @@
     "physicalProfile": {
       "bodyShape": "small_feminine_humanoid",
       "bodyMaterial": "candy_floss",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "small_breasts"
     }
   },
   {
@@ -225,7 +241,8 @@
     "physicalProfile": {
       "bodyShape": "small_feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "small_breasts"
     }
   },
   {
@@ -238,7 +255,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "porcelain",
-      "sexForm": "smooth_neutral"
+      "sexForm": "smooth_neutral",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -251,7 +269,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "slime",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -264,7 +283,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -277,7 +297,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -290,7 +311,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "ghostly_mist",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -304,7 +326,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "porcelain",
-      "sexForm": "smooth_neutral"
+      "sexForm": "smooth_neutral",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -317,7 +340,8 @@
     "physicalProfile": {
       "bodyShape": "small_feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "small_breasts"
     }
   },
   {
@@ -330,7 +354,8 @@
     "physicalProfile": {
       "bodyShape": "small_feminine_humanoid",
       "bodyMaterial": "stone",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -343,7 +368,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "plant_matter",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -356,7 +382,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "large_breasts"
     }
   },
   {
@@ -369,7 +396,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -382,7 +410,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "large_breasts"
     }
   },
   {
@@ -395,7 +424,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "plant_matter",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "large_breasts"
     }
   },
   {
@@ -409,7 +439,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "large_breasts"
     }
   },
   {
@@ -422,7 +453,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "plush_fabric",
-      "sexForm": "smooth_neutral"
+      "sexForm": "smooth_neutral",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -435,7 +467,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "honey",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -448,7 +481,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "living_flesh",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -461,7 +495,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "stone",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "large_breasts"
     }
   },
   {
@@ -474,7 +509,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "ghostly_mist",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -487,7 +523,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_humanoid",
       "bodyMaterial": "synthetic_skin",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -500,7 +537,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "plant_matter",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   },
   {
@@ -513,7 +551,8 @@
     "physicalProfile": {
       "bodyShape": "feminine_creature",
       "bodyMaterial": "water",
-      "sexForm": "feminine"
+      "sexForm": "feminine",
+      "chest": "medium_breasts"
     }
   }
 ]
