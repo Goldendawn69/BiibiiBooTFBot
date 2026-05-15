@@ -4,9 +4,7 @@ const { handleForm } = require("./form");
 const { handleResetForm } = require("./resetform");
 const { handleTransform } = require("./transform");
 const { handleRandomTransform } = require("./randomtransform");
-const {
-  handleListTransformations,
-} = require("./listtransformations");
+const {  handleListTransformations,} = require("./listtransformations");
 const { handleBBHelp } = require("./bbhelp");
 const { handleWhatAmI } = require("./whatami");
 const {
@@ -15,6 +13,7 @@ const {
   SETTINGS_BLOCKED_CATEGORIES_CUSTOM_ID,
   SETTINGS_MENTAL_EFFECTS_MAX_CUSTOM_ID,
   SETTINGS_MENTAL_EFFECTS_MIN_CUSTOM_ID,
+  SETTINGS_PHYSICAL_DETAIL_LEVEL_CUSTOM_ID,
   SETTINGS_TRANSFORMATION_NOTES_CUSTOM_ID,
 } = require("./settings");
 
@@ -35,6 +34,7 @@ const selectMenuHandlers = {
   [SETTINGS_BLOCKED_CATEGORIES_CUSTOM_ID]: handleSettingsSelectMenu,
   [SETTINGS_MENTAL_EFFECTS_MAX_CUSTOM_ID]: handleSettingsSelectMenu,
   [SETTINGS_MENTAL_EFFECTS_MIN_CUSTOM_ID]: handleSettingsSelectMenu,
+  [SETTINGS_PHYSICAL_DETAIL_LEVEL_CUSTOM_ID]: handleSettingsSelectMenu,
   [SETTINGS_TRANSFORMATION_NOTES_CUSTOM_ID]: handleSettingsSelectMenu,
 };
 

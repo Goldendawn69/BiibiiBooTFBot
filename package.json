@@ -6,10 +6,11 @@
   "scripts": {
     "start": "node src/index.js",
     "register": "node src/register-commands.js",
-    "check:transitions": "npm run validate:data && npm run preview:transitions",
-    "check:transitions-adult": "npm run validate:data && npm run preview:transitions -- adult",
+    "check:transitions": "npm run check:syntax && npm run validate:data && npm run preview:transitions",
+    "check:transitions-adult": "npm run check:syntax && npm run validate:data && npm run preview:transitions -- adult",
     "validate:data": "node scripts/validate-transformation-data.js",
-    "preview:transitions": "node scripts/preview-physical-transitions.js"
+    "preview:transitions": "node scripts/preview-physical-transitions.js",
+    "check:syntax": "node scripts/check-js-syntax.js"
   },
   "repository": {
     "type": "git",

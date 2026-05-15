@@ -3,30 +3,37 @@ const {
   MessageFlags,
   StringSelectMenuBuilder,
 } = require("discord.js");
+
 const {
   MENTAL_EFFECT_OPTIONS,
 } = require("../config/settings");
+
 const {
   TRANSFORMATION_CATEGORIES,
 } = require("../utils/transformationCategories");
+
 const {
   getMentalEffectLevelLabel,
   normalizeMentalEffectLevel,
 } = require("../utils/mentalEffects");
+
 const {
+  PHYSICAL_DETAIL_LEVELS,
   getUserBlockedTransformationCategories,
   getUserMentalEffectsRange,
+  getUserPhysicalDetailLevel,
   loadUsers,
   saveUsers,
   setUserBlockedTransformationCategories,
   setUserMentalEffectsMaxLevel,
   setUserMentalEffectsMinLevel,
+  setUserPhysicalDetailLevel,
 } = require("../utils/users");
 
 const SETTINGS_MENTAL_EFFECTS_MIN_CUSTOM_ID = "settings:mental-effects-min";
 const SETTINGS_MENTAL_EFFECTS_MAX_CUSTOM_ID = "settings:mental-effects-max";
-const SETTINGS_TRANSFORMATION_NOTES_CUSTOM_ID =
-  "settings:transformation-notes";
+const SETTINGS_TRANSFORMATION_NOTES_CUSTOM_ID = "settings:transformation-notes";
+const SETTINGS_PHYSICAL_DETAIL_LEVEL_CUSTOM_ID = "settings:physical-detail-level";
 const SETTINGS_BLOCKED_CATEGORIES_CUSTOM_ID = "settings:blocked-categories";
 
 function formatCategoryName(category) {
@@ -39,6 +46,9 @@ function formatCategoryName(category) {
 
 function buildSettingsContent(user) {
   const notesStatus = user.transformationNotesEnabled ? "Enabled" : "Disabled";
+  const physicalDetailLevel = getUserPhysicalDetailLevel(user);
+  const physicalDetailLabel =
+    physicalDetailLevel === PHYSICAL_DETAIL_LEVELS.ADULT ? "Adult" : "PG";
   const mentalEffectsRange = getUserMentalEffectsRange(user);
   const minLabel = getMentalEffectLevelLabel(mentalEffectsRange.minLevel);
   const maxLabel = getMentalEffectLevelLabel(mentalEffectsRange.maxLevel);
@@ -47,6 +57,7 @@ function buildSettingsContent(user) {
     "**BiiBiiBoo Settings**",
     "",
     `Transformation Notes: **${notesStatus}**`,
+    `Physical Detail Level: **${physicalDetailLabel}**`,
     `Mental Effects Range: **${minLabel}** to **${maxLabel}**`,
   ];
 
@@ -104,6 +115,28 @@ function buildTransformationNotesSelect(user) {
     );
 }
 
+function buildPhysicalDetailLevelSelect(user) {
+  const selectedLevel = getUserPhysicalDetailLevel(user);
+
+  return new StringSelectMenuBuilder()
+    .setCustomId(SETTINGS_PHYSICAL_DETAIL_LEVEL_CUSTOM_ID)
+    .setPlaceholder("Choose physical detail level for private notes")
+    .addOptions(
+      {
+        label: "Physical Detail: PG",
+        value: PHYSICAL_DETAIL_LEVELS.PG,
+        description: "Use softer wording for private physical transformation notes.",
+        default: selectedLevel === PHYSICAL_DETAIL_LEVELS.PG,
+      },
+      {
+        label: "Physical Detail: Adult",
+        value: PHYSICAL_DETAIL_LEVELS.ADULT,
+        description: "Use more direct adult wording in private transformation notes.",
+        default: selectedLevel === PHYSICAL_DETAIL_LEVELS.ADULT,
+      }
+    );
+}
+
 function buildBlockedCategoriesSelect(user) {
   const blockedCategories = getUserBlockedTransformationCategories(user);
 
@@ -129,6 +162,9 @@ function buildSettingsPanel(user, { ephemeral = true } = {}) {
     components: [
       new ActionRowBuilder().addComponents(
         buildTransformationNotesSelect(user)
+      ),
+      new ActionRowBuilder().addComponents(
+        buildPhysicalDetailLevelSelect(user)
       ),
       new ActionRowBuilder().addComponents(
         buildMentalEffectsSelect(
@@ -185,6 +221,7 @@ async function handleSettings(interaction) {
 function isSettingsSelectMenu(customId) {
   return [
     SETTINGS_TRANSFORMATION_NOTES_CUSTOM_ID,
+    SETTINGS_PHYSICAL_DETAIL_LEVEL_CUSTOM_ID,
     SETTINGS_MENTAL_EFFECTS_MIN_CUSTOM_ID,
     SETTINGS_MENTAL_EFFECTS_MAX_CUSTOM_ID,
     SETTINGS_BLOCKED_CATEGORIES_CUSTOM_ID,
@@ -225,6 +262,27 @@ async function handleSettingsSelectMenu(interaction) {
 
     return true;
   }
+
+  if (interaction.customId === SETTINGS_PHYSICAL_DETAIL_LEVEL_CUSTOM_ID) {
+    const selectedLevel = setUserPhysicalDetailLevel(
+      user,
+      interaction.values[0]
+    );
+
+    saveUsers(users);
+
+    const levelLabel =
+      selectedLevel === PHYSICAL_DETAIL_LEVELS.ADULT ? "Adult" : "PG";
+
+    await interaction.update(
+      buildSettingsUpdatePanel(
+        user,
+        `Saved Physical Detail Level: **${levelLabel}**`
+      )
+    );
+
+    return true;
+  }  
 
   if (interaction.customId === SETTINGS_BLOCKED_CATEGORIES_CUSTOM_ID) {
     const blockedCategories = setUserBlockedTransformationCategories(
@@ -276,6 +334,7 @@ module.exports = {
   SETTINGS_BLOCKED_CATEGORIES_CUSTOM_ID,
   SETTINGS_MENTAL_EFFECTS_MAX_CUSTOM_ID,
   SETTINGS_MENTAL_EFFECTS_MIN_CUSTOM_ID,
+  SETTINGS_PHYSICAL_DETAIL_LEVEL_CUSTOM_ID,
   SETTINGS_TRANSFORMATION_NOTES_CUSTOM_ID,
   buildSettingsPanel,
   handleSettings,
